@@ -10,6 +10,8 @@
 		6686F7E21D19F2AB00A447C8 /* RailroadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E11D19F2AB00A447C8 /* RailroadViewController.swift */; };
 		6686F7E41D1B2D7E00A447C8 /* DesignableButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E31D1B2D7E00A447C8 /* DesignableButton1.swift */; };
 		6686F7E61D1B2D9200A447C8 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E51D1B2D9200A447C8 /* DesignableButton.swift */; };
+		6686F7E81D1B474100A447C8 /* DesignableView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E71D1B474100A447C8 /* DesignableView1.swift */; };
+		6686F7EA1D1B475900A447C8 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E91D1B475900A447C8 /* DesignableView.swift */; };
 		66F84CD11D1880AF00B54B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CD01D1880AF00B54B01 /* AppDelegate.swift */; };
 		66F84CD31D1880AF00B54B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CD21D1880AF00B54B01 /* ViewController.swift */; };
 		66F84CD61D1880AF00B54B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F84CD41D1880AF00B54B01 /* Main.storyboard */; };
@@ -21,7 +23,6 @@
 		66F84D261D1880F900B54B01 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CE91D1880F900B54B01 /* DesignableTabBarController.swift */; };
 		66F84D271D1880F900B54B01 /* DesignableTextField1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CEA1D1880F900B54B01 /* DesignableTextField1.swift */; };
 		66F84D281D1880F900B54B01 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CEB1D1880F900B54B01 /* DesignableTextView.swift */; };
-		66F84D291D1880F900B54B01 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CEC1D1880F900B54B01 /* DesignableView.swift */; };
 		66F84D2A1D1880F900B54B01 /* DesignableCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */; };
 		66F84D2B1D1880F900B54B01 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CEF1D1880F900B54B01 /* ArrayExtensions.swift */; };
 		66F84D2C1D1880F900B54B01 /* BlockSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84CF01D1880F900B54B01 /* BlockSwipe.swift */; };
@@ -78,6 +79,8 @@
 		6686F7E11D19F2AB00A447C8 /* RailroadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailroadViewController.swift; sourceTree = "<group>"; };
 		6686F7E31D1B2D7E00A447C8 /* DesignableButton1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton1.swift; sourceTree = "<group>"; };
 		6686F7E51D1B2D9200A447C8 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		6686F7E71D1B474100A447C8 /* DesignableView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView1.swift; sourceTree = "<group>"; };
+		6686F7E91D1B475900A447C8 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		66F84CCD1D1880AE00B54B01 /* SwiftBest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F84CD01D1880AF00B54B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F84CD21D1880AF00B54B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		66F84CE91D1880F900B54B01 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
 		66F84CEA1D1880F900B54B01 /* DesignableTextField1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField1.swift; sourceTree = "<group>"; };
 		66F84CEB1D1880F900B54B01 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
-		66F84CEC1D1880F900B54B01 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableCheckbox.swift; path = SwiftBest/swiftMy/DesignableViewsOthers/DesignableCheckbox.swift; sourceTree = SOURCE_ROOT; };
 		66F84CEF1D1880F900B54B01 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		66F84CF01D1880F900B54B01 /* BlockSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSwipe.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				66F84CE41D1880F900B54B01 /* DesignableTextField.swift */,
 				66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */,
 				6686F7E51D1B2D9200A447C8 /* DesignableButton.swift */,
+				6686F7E91D1B475900A447C8 /* DesignableView.swift */,
 			);
 			path = DesignableViews;
 			sourceTree = "<group>";
@@ -219,7 +222,7 @@
 				66F84CE91D1880F900B54B01 /* DesignableTabBarController.swift */,
 				66F84CEA1D1880F900B54B01 /* DesignableTextField1.swift */,
 				66F84CEB1D1880F900B54B01 /* DesignableTextView.swift */,
-				66F84CEC1D1880F900B54B01 /* DesignableView.swift */,
+				6686F7E71D1B474100A447C8 /* DesignableView1.swift */,
 			);
 			path = DesignableViewsOthers;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				66F84D4D1D1880F900B54B01 /* UIColoredView.swift in Sources */,
 				66F84D391D1880F900B54B01 /* BlockPan.swift in Sources */,
 				66F84D591D1880F900B54B01 /* UIWindowExtensions.swift in Sources */,
+				6686F7E81D1B474100A447C8 /* DesignableView1.swift in Sources */,
 				66F84D511D1880F900B54B01 /* UIImageViewExtensions.swift in Sources */,
 				66F84D481D1880F900B54B01 /* NSTimerExtensions.swift in Sources */,
 				66F84D4E1D1880F900B54B01 /* UIColorExtensions.swift in Sources */,
@@ -393,6 +397,7 @@
 				66F84D251D1880F900B54B01 /* DesignableLabel.swift in Sources */,
 				66F84D4F1D1880F900B54B01 /* UIDeviceExtensions.swift in Sources */,
 				66F84D2D1D1880F900B54B01 /* BlockTap.swift in Sources */,
+				6686F7EA1D1B475900A447C8 /* DesignableView.swift in Sources */,
 				66F84D351D1880F900B54B01 /* Extentions.swift in Sources */,
 				66F84D271D1880F900B54B01 /* DesignableTextField1.swift in Sources */,
 				66F84D441D1880F900B54B01 /* NSBundleExtensions.swift in Sources */,
@@ -405,7 +410,6 @@
 				66F84D3B1D1880F900B54B01 /* BlockWebView.swift in Sources */,
 				66F84D501D1880F900B54B01 /* UIFontExtensions.swift in Sources */,
 				66F84D3F1D1880F900B54B01 /* CharacterExtensions.swift in Sources */,
-				66F84D291D1880F900B54B01 /* DesignableView.swift in Sources */,
 				66F84D521D1880F900B54B01 /* UILabelExtensions.swift in Sources */,
 				66F84D371D1880F900B54B01 /* BlockButton.swift in Sources */,
 				66F84D401D1880F900B54B01 /* DoubleExtensions.swift in Sources */,

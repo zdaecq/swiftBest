@@ -23,7 +23,7 @@ public class LoadingView{
         
         centerView.frame = CGRectMake(0, 0, 80, 80)
         centerView.center = darkBackgroundView.center
-        centerView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        centerView.backgroundColor = UIColor(white: 0, alpha: 0.8)
         centerView.clipsToBounds = true
         centerView.layer.cornerRadius = 10
         
@@ -36,8 +36,12 @@ public class LoadingView{
     }
     
     public func showInView(view: UIView) {
-        view.addSubview(darkBackgroundView)
         activityIndicator.startAnimating()
+        view.addSubview(darkBackgroundView)
+        darkBackgroundView.alpha = 0
+        UIView.animateWithDuration(0.3) {
+            self.darkBackgroundView.alpha = 1
+        }
     }
 
     

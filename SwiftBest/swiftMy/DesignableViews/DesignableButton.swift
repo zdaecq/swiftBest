@@ -24,12 +24,25 @@ import UIKit
 
 @IBDesignable public class DesignableButton: UIButton {
 
-    @IBInspectable public var imageSpacing: CGFloat = 0 {
+    
+    @IBInspectable public var imageVertical: Bool = false {
         didSet {
-            imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, imageSpacing);
-            titleEdgeInsets = UIEdgeInsetsMake(0, imageSpacing, 0, 0);
+            updateImages()
         }
     }
+    
+    @IBInspectable public var imageYSpace: CGFloat = 10 {
+        didSet {
+            updateImages()
+        }
+    }
+    
+    @IBInspectable public var imageXSpace: CGFloat = 0 {
+        didSet {
+            updateImages()
+        }
+    }
+    
     
     
     @IBInspectable public var borderColor: UIColor = UIColor.clearColor() {
@@ -49,6 +62,47 @@ import UIKit
             layer.cornerRadius = cornerRadius
         }
     }
+    
+    
+    func updateImages() {
+        if imageVertical {
+            var frame = imageView!.frame
+            frame = CGRectMake((bounds.size.width - frame.size.width) / 2,
+                               frame.y - imageYSpace,
+                               frame.size.width,
+                               frame.size.height);
+            imageView!.frame = frame;
+            
+            frame = titleLabel!.frame;
+            frame = CGRectMake((bounds.size.width - frame.size.width) / 2,
+                               frame.y + imageYSpace,
+                               frame.size.width,
+                               frame.size.height);
+            
+            titleLabel!.frame = frame;
+            
+        } else {
+            imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, imageXSpace)
+            titleEdgeInsets = UIEdgeInsetsMake(0, imageXSpace, 0, 0)
+        }
+    }
 
 
 }
+
+extension String {
+    func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: CGFloat.max)
+        
+        let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        
+        return boundingBox.height
+    }
+}
+
+
+
+
+
+
+

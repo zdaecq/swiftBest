@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjy-5B-4mb" customClass="DesignableTextField" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="72" y="86" width="183" height="30"/>
+                                <rect key="frame" x="69" y="65" width="183" height="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -42,35 +42,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kif-yq-mNY" customClass="DesignableButton" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="72" y="143" width="104" height="28"/>
-                                <state key="normal" title="dsfdfgfg" image="Search icon@1x">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-MM-OcS" customClass="DesignableButton" customModule="SwiftBest" customModuleProvider="target">
+                                <rect key="frame" x="73" y="187" width="199" height="121"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title=" dfg dfgfdg f fg" image="Search icon@1x">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSpacing">
-                                        <real key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="imageTop" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="imageVertical" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-MM-OcS" customClass="DesignableButton" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="86" y="226" width="113" height="86"/>
-                                <inset key="imageEdgeInsets" minX="50" minY="-50" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="dsfdfgfg" image="Search icon@1x">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-jg-IBs" customClass="DesignableCheckbox" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="49" y="332" width="96" height="92"/>
+                                <rect key="frame" x="112" y="316" width="96" height="92"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkSize">
@@ -95,14 +82,69 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kif-yq-mNY" customClass="DesignableButton" customModule="SwiftBest" customModuleProvider="target">
+                                <rect key="frame" x="108" y="113" width="192" height="47"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="18" maxY="0.0"/>
+                                <state key="normal" title="dsfdfgfg" image="Search icon@1x">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="imageVertical" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionShowModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ep9-IK-9JM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="Bm7-7r-huE" kind="presentation" identifier="modal" id="qt3-vT-mJ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="387"/>
+            <point key="canvasLocation" x="265" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0wP-7b-DUk">
+            <objects>
+                <viewController id="Bm7-7r-huE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9eP-mP-1RU"/>
+                        <viewControllerLayoutGuide type="bottom" id="m0b-Vr-bOV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkX-Nf-21p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfV-IR-9kk">
+                                <rect key="frame" x="96" y="113" width="129" height="88"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="k4g-Dc-6e5" kind="unwind" unwindAction="unwindToViewController:" id="U1w-4i-V8M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFb-Bd-922" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="k4g-Dc-6e5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="387"/>
         </scene>
     </scenes>
     <resources>

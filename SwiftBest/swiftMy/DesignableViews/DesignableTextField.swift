@@ -1,6 +1,70 @@
 
 import UIKit
 
+private var xoAssociationKey: UInt8 = 0
+
+protocol foo: class {
+    var underline       : Bool      {get set}
+    var underlineColor  : UIColor   {get set}
+    var underlineWidth  : CGFloat   {get set}
+    
+    func updateUndeLine()
+}
+
+extension foo where Self: UIView {
+    
+    var underline : Bool {
+        
+        get {
+            return objc_getAssociatedObject(self, &xoAssociationKey) as! Bool
+        }
+        set {
+            objc_setAssociatedObject(self, &xoAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            updateUndeLine()
+        }
+    }
+    
+    var underlineColor: UIColor {
+        get {
+            return objc_getAssociatedObject(self, &xoAssociationKey) as! UIColor
+        }
+        set {
+            objc_setAssociatedObject(self, &xoAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            updateUndeLine()
+        }
+    }
+    
+    var underlineWidth: CGFloat {
+        get {
+            return objc_getAssociatedObject(self, &xoAssociationKey) as! CGFloat
+        }
+        set {
+            objc_setAssociatedObject(self, &xoAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            updateUndeLine()
+        }
+    }
+    
+    func updateUndeLine() {
+        if underline {
+            let underline = CAShapeLayer()
+            let bezierPath = UIBezierPath()
+            bezierPath.moveToPoint(CGPointMake(0, bounds.height - underlineWidth / 2))
+            bezierPath.addLineToPoint(CGPointMake(bounds.width, bounds.height - underlineWidth / 2))
+            underline.path = bezierPath.CGPath
+            underline.strokeColor = underlineColor.CGColor
+            underline.lineWidth = underlineWidth
+            layer.addSublayer(underline)
+            
+            //let bottomBorder = CALayer()
+            //bottomBorder.frame = CGRectMake(0.0, frame.size.height - underlineWidth, frame.size.width, underlineWidth);
+            //bottomBorder.backgroundColor = underlineColor.CGColor
+            //layer.addSublayer(bottomBorder)
+        }
+    }
+}
+
+
+
 @IBDesignable class DesignableTextField: UITextField {
 
     @IBInspectable var image : UIImage? {
