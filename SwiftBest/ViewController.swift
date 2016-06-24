@@ -21,16 +21,21 @@ class ViewController: UIViewController {
     
     @IBAction func actionShowModal(sender: UIButton) {
         
-        LoadingView.sharedInstance.showInView(view)
+        performSegueWithIdentifier("modal", sender: nil) { (segue) in
+            let vc = segue.destinationViewController
+            vc.view.backgroundColor = UIColor.redColor()
+        }
         
-        ez.runThisAfterDelay( seconds: 1, after: { [weak self] in
-            LoadingView.sharedInstance.hide()
-            
-            self?.performSegueWithIdentifier("modal", sender: nil) { (segue) in
-                let vc = segue.destinationViewController
-                vc.view.backgroundColor = UIColor.redColor()
-            }
-        })
+//        LoadingView.sharedInstance.showInView(view)
+//        
+//        ez.runThisAfterDelay( seconds: 1, after: { [weak self] in
+//            LoadingView.sharedInstance.hide()
+//            
+//            self?.performSegueWithIdentifier("modal", sender: nil) { (segue) in
+//                let vc = segue.destinationViewController
+//                vc.view.backgroundColor = UIColor.redColor()
+//            }
+//        })
     }
     
 }

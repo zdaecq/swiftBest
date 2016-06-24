@@ -47,9 +47,13 @@ extension String {
     }
 
     /// EZSE: Character count
-    //public var length: Int {
-        //return self.characters.count
-    //}
+    public var length: Int {
+        return self.characters.count
+    }
+    
+
+    
+    
 
     /// EZSE: Counts number of instances of the input inside String
     public func count(substring: String) -> Int {
@@ -145,6 +149,15 @@ extension String {
         let firstMatch = dataDetector?.firstMatchInString(self, options: NSMatchingOptions.ReportCompletion, range: NSRange(location: 0, length: length))
         return (firstMatch?.range.location != NSNotFound && firstMatch?.URL?.scheme == "mailto")
     }
+    
+//    var isEmail: Bool {
+//        do {
+//            let regex = try NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .CaseInsensitive)
+//            return regex.firstMatchInString(self, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, self.characters.count)) != nil
+//        } catch {
+//            return false
+//        }
+//    }
 
     /// EZSE: Returns if String is a number
     public func isNumber() -> Bool {
@@ -359,6 +372,12 @@ extension String {
     func isNotEmpty() -> Bool {
         return !self.trim().isEmpty;
     }
+    
+    public func toURL() -> NSURL? {
+        return NSURL(string: self)
+    }
+    
+
 }
 
 /// EZSE: Pattern matching of strings via defined functions

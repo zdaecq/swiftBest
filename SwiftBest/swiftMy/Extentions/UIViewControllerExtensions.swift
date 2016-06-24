@@ -1,28 +1,45 @@
 //
-//  Extentions.swift
-//  AlamofireTest
+//  UIViewControllerExtensions.swift
+//  OrderApp-Customer-iOS
 //
-//  Created by zdaecqze zdaecq on 04.06.16.
-//  Copyright © 2016 zdaecqze zdaecq. All rights reserved.
+//  Created by Yaroslav Bondar on 09.06.16.
+//  Copyright © 2016 SMediaLink. All rights reserved.
 //
 
 import UIKit
 
-// MARK: - String
-public extension String {
-    public var length: Int { return self.characters.count }
+// MARK: startNetwork
+extension UIViewController {
     
-    public func toURL() -> NSURL? {
-        return NSURL(string: self)
+    func startNetwork() {
+        dispatch_async(dispatch_get_main_queue(), {
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        })
+    }
+    
+    func finishNetwork() {
+        dispatch_async(dispatch_get_main_queue(), {
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        })
+    }
+    
+}
+
+// MARK: startNetwork executeForLastTextField
+extension UIViewController {
+    
+    func executeForLastTextField(textField: UITextField, onComplition complition: ()->() ) {
+        let nextTag: Int = textField.tag + 1
+        let nextResponder: UIResponder? = textField.superview?.superview?.viewWithTag(nextTag)
+        
+        if let nextR = nextResponder {
+            nextR.becomeFirstResponder()
+        } else {
+            complition()
+        }
     }
 }
 
-
-// MARK: - UIViewController
-// MARK: UnwindSegue
-extension UIViewController {
-    @IBAction public func unwindToViewController (sender: UIStoryboardSegue){}
-}
 
 // MARK: addTapBackgroundGestureToHideKeyboard
 extension UIViewController {
@@ -35,6 +52,11 @@ extension UIViewController {
     func dismissKeyboard() {
         view.endEditing(true)
     }
+}
+
+// MARK: UnwindSegue
+extension UIViewController {
+    @IBAction public func unwindToViewController (sender: UIStoryboardSegue){}
 }
 
 // MARK: performSegueWithIdentifier
@@ -96,6 +118,3 @@ extension UIViewController {
         }
     }
 }
-
-
-

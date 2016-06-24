@@ -43,8 +43,6 @@ import UIKit
         }
     }
     
-    
-    
     @IBInspectable public var borderColor: UIColor = UIColor.clearColor() {
         didSet {
             layer.borderColor = borderColor.CGColor
