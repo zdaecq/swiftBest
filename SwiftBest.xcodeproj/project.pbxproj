@@ -107,7 +107,7 @@
 		66F84CE91D1880F900B54B01 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
 		66F84CEA1D1880F900B54B01 /* DesignableTextField1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField1.swift; sourceTree = "<group>"; };
 		66F84CEB1D1880F900B54B01 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
-		66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableCheckbox.swift; path = SwiftBest/swiftMy/DesignableViewsOthers/DesignableCheckbox.swift; sourceTree = SOURCE_ROOT; };
+		66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableCheckbox.swift; sourceTree = "<group>"; };
 		66F84CEF1D1880F900B54B01 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		66F84CF21D1880F900B54B01 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		66F84CF31D1880F900B54B01 /* EZSwiftFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwiftFunctions.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		CEF814E71D1D0E3600A5622B /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		CEF814EA1D1D0F5B00A5622B /* IsoCountries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsoCountries.swift; sourceTree = "<group>"; };
 		CEF814EB1D1D0F5B00A5622B /* IsoCountryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsoCountryService.swift; sourceTree = "<group>"; };
-		CEF814EE1D1D0FB200A5622B /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatRatingView.swift; path = SwiftBest/swiftMy/Classes/FloatRatingView.swift; sourceTree = SOURCE_ROOT; };
+		CEF814EE1D1D0FB200A5622B /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
 		CEF814F01D1D0FE900A5622B /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 		CEF814F21D1D2C2D00A5622B /* BlockSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSwipe.swift; sourceTree = "<group>"; };
 		CEF814F31D1D2C2D00A5622B /* BlockTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockTap.swift; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 		66F84CC41D1880AE00B54B01 = {
 			isa = PBXGroup;
 			children = (
-				66F84CCF1D1880AF00B54B01 /* SwiftBest */,
 				66F84CCE1D1880AE00B54B01 /* Products */,
+				66F84CCF1D1880AF00B54B01 /* SwiftBest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,12 +204,12 @@
 			children = (
 				66F84CE21D1880F900B54B01 /* swiftMy */,
 				66F84CD01D1880AF00B54B01 /* AppDelegate.swift */,
-				66F84CD21D1880AF00B54B01 /* ViewController.swift */,
-				6686F7E11D19F2AB00A447C8 /* RailroadViewController.swift */,
-				66F84CD41D1880AF00B54B01 /* Main.storyboard */,
 				66F84CD71D1880AF00B54B01 /* Assets.xcassets */,
-				66F84CD91D1880AF00B54B01 /* LaunchScreen.storyboard */,
 				66F84CDC1D1880AF00B54B01 /* Info.plist */,
+				66F84CD91D1880AF00B54B01 /* LaunchScreen.storyboard */,
+				66F84CD41D1880AF00B54B01 /* Main.storyboard */,
+				6686F7E11D19F2AB00A447C8 /* RailroadViewController.swift */,
+				66F84CD21D1880AF00B54B01 /* ViewController.swift */,
 			);
 			path = SwiftBest;
 			sourceTree = "<group>";
@@ -217,14 +217,14 @@
 		66F84CE21D1880F900B54B01 /* swiftMy */ = {
 			isa = PBXGroup;
 			children = (
+				CEF814E61D1D0E3600A5622B /* Classes */,
 				66F84CE31D1880F900B54B01 /* DesignableViews */,
 				66F84CE51D1880F900B54B01 /* DesignableViewsOthers */,
-				66F84CF91D1880F900B54B01 /* NewExtentions.swift */,
 				66F84CEE1D1880F900B54B01 /* Extentions */,
 				66F84CFA1D1880F900B54B01 /* ExtentionsOthers */,
-				CEF814E61D1D0E3600A5622B /* Classes */,
 				66F84D1F1D1880F900B54B01 /* Functions.swift */,
 				66F84D211D1880F900B54B01 /* LoadingView.swift */,
+				66F84CF91D1880F900B54B01 /* NewExtentions.swift */,
 			);
 			path = swiftMy;
 			sourceTree = "<group>";
@@ -232,9 +232,9 @@
 		66F84CE31D1880F900B54B01 /* DesignableViews */ = {
 			isa = PBXGroup;
 			children = (
-				66F84CE41D1880F900B54B01 /* DesignableTextField.swift */,
-				66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */,
 				6686F7E51D1B2D9200A447C8 /* DesignableButton.swift */,
+				66F84CED1D1880F900B54B01 /* DesignableCheckbox.swift */,
+				66F84CE41D1880F900B54B01 /* DesignableTextField.swift */,
 				6686F7E91D1B475900A447C8 /* DesignableView.swift */,
 			);
 			path = DesignableViews;
@@ -257,18 +257,18 @@
 		66F84CEE1D1880F900B54B01 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */,
-				CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */,
-				CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */,
-				CEF814D71D1D0B6300A5622B /* UITextFieldExtensions.swift */,
-				CEF814D81D1D0B6300A5622B /* UIViewControllerExtensions.swift */,
 				66F84CEF1D1880F900B54B01 /* ArrayExtensions.swift */,
 				66F84CF21D1880F900B54B01 /* DictionaryExtensions.swift */,
 				66F84CF31D1880F900B54B01 /* EZSwiftFunctions.swift */,
+				CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */,
+				CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */,
 				66F84CF51D1880F900B54B01 /* NSUserDefaultsExtension.swift */,
 				66F84CF61D1880F900B54B01 /* StringExtensions.swift */,
 				66F84CF71D1880F900B54B01 /* UIAlertControllerExtensions.swift */,
 				66F84CF81D1880F900B54B01 /* UIImageExtensions.swift */,
+				CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */,
+				CEF814D71D1D0B6300A5622B /* UITextFieldExtensions.swift */,
+				CEF814D81D1D0B6300A5622B /* UIViewControllerExtensions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -277,9 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				66F84CFB1D1880F900B54B01 /* !site.txt */,
-				CEF815081D1D79B500A5622B /* PromiseExtnetions.swift */,
 				CEF814E21D1D0D2500A5622B /* AlamofireExtentions.swift */,
-				CEF814E31D1D0D2500A5622B /* GMSMapViewExtensions.swift */,
 				66F84CFC1D1880F900B54B01 /* BlockButton.swift */,
 				66F84CFD1D1880F900B54B01 /* BlockLongPress.swift */,
 				66F84CFE1D1880F900B54B01 /* BlockPan.swift */,
@@ -291,6 +289,7 @@
 				66F84D041D1880F900B54B01 /* CharacterExtensions.swift */,
 				66F84D051D1880F900B54B01 /* DoubleExtensions.swift */,
 				66F84D061D1880F900B54B01 /* ErrorTypeExtensions.swift */,
+				CEF814E31D1D0D2500A5622B /* GMSMapViewExtensions.swift */,
 				66F84D071D1880F900B54B01 /* IntExtensions.swift */,
 				66F84D081D1880F900B54B01 /* NSAttributedStringExtension.swift */,
 				66F84D091D1880F900B54B01 /* NSBundleExtensions.swift */,
@@ -299,11 +298,12 @@
 				66F84D0C1D1880F900B54B01 /* NSObjectExtensions.swift */,
 				66F84D0D1D1880F900B54B01 /* NSTimerExtensions.swift */,
 				66F84D0E1D1880F900B54B01 /* NSURLExtensions.swift */,
+				CEF815081D1D79B500A5622B /* PromiseExtnetions.swift */,
 				66F84D0F1D1880F900B54B01 /* UIApplicationExtensions.swift */,
 				66F84D101D1880F900B54B01 /* UIBarButtonItemExtensions.swift */,
 				66F84D111D1880F900B54B01 /* UIButtonExtensions.swift */,
-				66F84D121D1880F900B54B01 /* UIColoredView.swift */,
 				66F84D131D1880F900B54B01 /* UIColorExtensions.swift */,
+				66F84D121D1880F900B54B01 /* UIColoredView.swift */,
 				66F84D141D1880F900B54B01 /* UIDeviceExtensions.swift */,
 				66F84D151D1880F900B54B01 /* UIFontExtensions.swift */,
 				66F84D161D1880F900B54B01 /* UIImageViewExtensions.swift */,
@@ -323,11 +323,11 @@
 			isa = PBXGroup;
 			children = (
 				CEF814E91D1D0F5B00A5622B /* IsoCountryService */,
-				CEF814E71D1D0E3600A5622B /* KeyboardLayoutConstraint.swift */,
-				CEF814EE1D1D0FB200A5622B /* FloatRatingView.swift */,
-				CEF814F01D1D0FE900A5622B /* KeychainSwiftDistrib.swift */,
 				CEF814F21D1D2C2D00A5622B /* BlockSwipe.swift */,
 				CEF814F31D1D2C2D00A5622B /* BlockTap.swift */,
+				CEF814EE1D1D0FB200A5622B /* FloatRatingView.swift */,
+				CEF814E71D1D0E3600A5622B /* KeyboardLayoutConstraint.swift */,
+				CEF814F01D1D0FE900A5622B /* KeychainSwiftDistrib.swift */,
 				CEABED111D22BC8000455C05 /* LockView.swift */,
 			);
 			path = Classes;
@@ -501,6 +501,7 @@
 				66F84CD51D1880AF00B54B01 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		66F84CD91D1880AF00B54B01 /* LaunchScreen.storyboard */ = {
@@ -509,6 +510,7 @@
 				66F84CDA1D1880AF00B54B01 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
