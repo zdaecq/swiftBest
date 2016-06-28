@@ -70,6 +70,7 @@
 		66F84D591D1880F900B54B01 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */; };
 		66F84D5A1D1880F900B54B01 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D1F1D1880F900B54B01 /* Functions.swift */; };
 		66F84D5C1D1880F900B54B01 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D211D1880F900B54B01 /* LoadingView.swift */; };
+		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
 		CEF814DA1D1D0B6300A5622B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */; };
 		CEF814DB1D1D0B6300A5622B /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */; };
 		CEF814DD1D1D0B6300A5622B /* UISearchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */; };
@@ -153,6 +154,7 @@
 		66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		66F84D1F1D1880F900B54B01 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		66F84D211D1880F900B54B01 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtensions.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				CEF814F01D1D0FE900A5622B /* KeychainSwiftDistrib.swift */,
 				CEF814F21D1D2C2D00A5622B /* BlockSwipe.swift */,
 				CEF814F31D1D2C2D00A5622B /* BlockTap.swift */,
+				CEABED111D22BC8000455C05 /* LockView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				6686F7E21D19F2AB00A447C8 /* RailroadViewController.swift in Sources */,
 				CEF815091D1D79B500A5622B /* PromiseExtnetions.swift in Sources */,
 				CEF814EF1D1D0FB200A5622B /* FloatRatingView.swift in Sources */,
+				CEABED121D22BC8000455C05 /* LockView.swift in Sources */,
 				66F84D451D1880F900B54B01 /* NSDateExtensions.swift in Sources */,
 				66F84D331D1880F900B54B01 /* UIAlertControllerExtensions.swift in Sources */,
 				66F84D5A1D1880F900B54B01 /* Functions.swift in Sources */,

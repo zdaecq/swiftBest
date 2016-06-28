@@ -8,8 +8,30 @@
 import UIKit
 
 extension UIAlertController {
-    /// EZSE: Easy way to present UIAlertController
+    
+    convenience init(title: String?, message: String?) {
+        self.init(title: title, message: message, preferredStyle: .Alert)
+        addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+    }
+    
+    static func getAlertControllerWith(title title: String?, message: String?) -> UIAlertController {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+        return alertController
+    }
+    
     func show() {
-        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(self, animated: true, completion: nil)
+        UIApplication.topController.presentViewController(self, animated: true, completion: nil)
+    }
+}
+
+extension UIApplication {
+    
+    static var topController : UIViewController {
+        var controller = UIApplication.sharedApplication().keyWindow?.rootViewController
+        while let presentedViewController = controller!.presentedViewController {
+            controller = presentedViewController
+        }
+        return controller!
     }
 }
