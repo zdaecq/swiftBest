@@ -8,6 +8,23 @@
 
 import UIKit
 
+// Needs BlurView class
+extension UIView {
+    func addBlurToBackgroundWithStyle(blurEffectStyle: UIBlurEffectStyle) {
+        
+        var blurView = UIView(frame: bounds)
+        
+        if !UIAccessibilityIsReduceTransparencyEnabled() {
+            blurView = BlurView(blurEffectStyle, frame: bounds)
+        } else {
+            blurView.backgroundColor = UIColor ( red: 0.8411, green: 0.8411, blue: 0.8411, alpha: 0.9 )
+        }
+        
+        addSubview(blurView)
+        sendSubviewToBack(blurView)
+    }
+}
+
 // MARK: Custom UIView Initilizers
 extension UIView {
     /// EZSwiftExtensions

@@ -128,6 +128,30 @@ class LockView: UIView {
         return layer
     }
     
+    //    func createBasePointLayer() -> CALayer {
+    //
+    //        let origin = CGPoint(x: -lockView.lockSize.width/2, y: -lockView.lockSize.height/2)
+    //        let path = UIBezierPath(ovalInRect: CGRect(origin: origin, size: lockView.lockSize))
+    //
+    //        let layer = CAShapeLayer()
+    //        layer.path = path.CGPath
+    //        layer.fillColor = UIColor.blackColor().CGColor
+    //        return layer
+    //    }
+    //
+    //    func createSelectionPointLayer() -> CALayer {
+    //
+    //        let halfSize = CGSize(width: lockView.lockSize.width / 2, height: lockView.lockSize.height / 2)
+    //        let origin = CGPoint(x: -halfSize.width/2, y: -halfSize.height/2)
+    //        let path = UIBezierPath(ovalInRect: CGRect(origin: origin, size: halfSize))
+    //
+    //        let layer = CAShapeLayer()
+    //        layer.path = path.CGPath
+    //        layer.fillColor = UIColor.yellowColor().CGColor
+    //
+    //        return layer
+    //    }
+    
     
     // MARK: - Private methods
     private func getLockIndexForPoint(point: CGPoint) -> Int? {

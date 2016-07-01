@@ -13,6 +13,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    // DEEP LINK, URL Scheme method
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        if url.host == nil {
+            return true;
+        }
+        
+//        let urlString = url.absoluteString
+//        let queryArray = urlString.componentsSeparatedByString("/")
+//        let query = queryArray[2]
+//        
+//        if let controller = UIApplication.topController as? OCVerificationController {
+//            controller.verificationCodeTextField.text = query
+//        }
+        
+        return true
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
