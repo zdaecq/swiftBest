@@ -6,10 +6,12 @@
 //  Copyright © 2016 SMediaLink. All rights reserved.
 //
 
-import PhoneNumberKit
+// TODO: Need to import PhoneNumberKit framwork to project
 
-extension PhoneNumberKit {
-    static var currentPhoneCode : UInt64 {
-        return PhoneNumberKit().codeForCountry(NSLocale.currentLangugeCode)!
-    }
-}
+//import PhoneNumberKit
+
+//extension PhoneNumberKit {
+    //static var currentPhoneCode : UInt64 {
+        //return PhoneNumberKit().codeForCountry(NSLocale.currentLangugeCode)!
+    //}
+//}

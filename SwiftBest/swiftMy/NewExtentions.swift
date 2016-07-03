@@ -8,22 +8,7 @@
 
 import UIKit
 
-// MARK: Navigation extentions
-extension UIViewController {
-    
-    func setNavigationBarTranslucent() {
-        if let nc = navigationController {
-            nc.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-            nc.navigationBar.shadowImage = UIImage()
-            nc.navigationBar.translucent = true
-            nc.view.backgroundColor = UIColor.clearColor()
-        }
-    }
-    
-    func clearBackBarButtonTitle() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
-    }
-}
+
 
 func setNavigationBarTranslucentTotal() {
     // Override point for customization after application launch.
@@ -36,6 +21,14 @@ func setNavigationBarTranslucentTotal() {
     // Set translucent. (Default value is already true, so this can be removed if desired.)
     UINavigationBar.appearance().translucent = true
 }
+
+extension UIStoryboard {
+    func instantiateViewControllerWithIdentifier<T>(identifier: T.Type) -> T {
+        let identifierString = String(identifier)
+        return instantiateViewControllerWithIdentifier(identifierString) as! T
+    }
+}
+
 
 
 //1

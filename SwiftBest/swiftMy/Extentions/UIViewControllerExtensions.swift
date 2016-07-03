@@ -25,6 +25,23 @@ extension UIViewController {
     
 }
 
+// MARK: Navigation extentions
+extension UIViewController {
+    
+    func setNavigationBarTranslucent() {
+        if let nc = navigationController {
+            nc.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+            nc.navigationBar.shadowImage = UIImage()
+            nc.navigationBar.translucent = true
+            nc.view.backgroundColor = UIColor.clearColor()
+        }
+    }
+    
+    func clearBackBarButtonTitle() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+    }
+}
+
 // MARK: startNetwork executeForLastTextField
 extension UIViewController {
     
@@ -32,8 +49,8 @@ extension UIViewController {
         let nextTag: Int = textField.tag + 1
         let nextResponder: UIResponder? = textField.superview?.superview?.viewWithTag(nextTag)
         
-        if let nextR = nextResponder {
-            nextR.becomeFirstResponder()
+        if let nextResponder = nextResponder {
+            nextResponder.becomeFirstResponder()
         } else {
             complition()
         }

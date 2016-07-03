@@ -46,18 +46,21 @@ import UIKit
     @IBInspectable public var borderColor: UIColor = UIColor.clearColor() {
         didSet {
             layer.borderColor = borderColor.CGColor
+            layer.masksToBounds = true
         }
     }
     
     @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
+            layer.masksToBounds = true
         }
     }
     
     @IBInspectable public var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
+            layer.masksToBounds = true
         }
     }
     
@@ -68,16 +71,16 @@ import UIKit
             frame = CGRectMake((bounds.size.width - frame.size.width) / 2,
                                frame.y - imageYSpace,
                                frame.size.width,
-                               frame.size.height);
-            imageView!.frame = frame;
+                               frame.size.height)
+            imageView!.frame = frame
             
             frame = titleLabel!.frame;
             frame = CGRectMake((bounds.size.width - frame.size.width) / 2,
                                frame.y + imageYSpace,
                                frame.size.width,
-                               frame.size.height);
+                               frame.size.height)
             
-            titleLabel!.frame = frame;
+            titleLabel!.frame = frame
             
         } else {
             imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, imageXSpace)
@@ -88,15 +91,51 @@ import UIKit
 
 }
 
-extension String {
-    func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
-        let constraintRect = CGSize(width: width, height: CGFloat.max)
+class BYButton: UIButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        //backgroundColor = UIColor.redColor()
         
-        let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        backgroundColor = UIColor.redColor()
+        setBackgroundColor(UIColor.whiteColor(), forState: .Highlighted)
+    }
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        //layer.masksToBounds = true
+        //cornerRadius = 10
+        //borderWidth = 3
+        //borderColor = UIColor.redColor()
+        tintColor = UIColor.yellowColor()
+        //backgroundColor = UIColor.whiteColor()
+        //backgroundColor = UIColor.redColor()
+        //addBorder(width: 10, color: UIColor.blueColor())
+        //setCornerRadius(radius: 10)
+        layer.cornerRadius = 15
+        layer.borderWidth = 5
+        layer.masksToBounds = true
         
-        return boundingBox.height
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        backgroundColor = UIColor.redColor()
+        
     }
 }
+
+//extension String {
+    //func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
+        //let constraintRect = CGSize(width: width, height: CGFloat.max)
+        
+        //let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        
+        //return boundingBox.height
+    //}
+//}
 
 
 

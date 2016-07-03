@@ -114,7 +114,7 @@ extension String {
     }
 
     /// EZSE : Returns count of words in string
-    public var countofWords: Int {
+    public var countOfWords: Int {
         let regex = try? NSRegularExpression(pattern: "\\w+", options: NSRegularExpressionOptions())
         return regex?.numberOfMatchesInString(self, options: NSMatchingOptions(), range: NSMakeRange(0, self.length)) ?? 0
     }

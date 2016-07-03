@@ -19,12 +19,12 @@ extension UISearchBar {
         
         //setting color to clear button
         let clearButton = searchBarTextField.valueForKey("clearButton") as! UIButton
-        clearButton.setImage(clearButton.imageView?.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate), forState: UIControlState.Normal)
+        clearButton.setImage(clearButton.imageView?.image?.imageWithRenderingMode(.AlwaysTemplate), forState: .Normal)
         clearButton.tintColor = color
         
         //setting color to glass icon
         let glassIconView = searchBarTextField.leftView as! UIImageView
-        glassIconView.image = glassIconView.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        glassIconView.image = glassIconView.image?.imageWithRenderingMode(.AlwaysTemplate)
         glassIconView.tintColor = color
     }
     
