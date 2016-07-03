@@ -39,7 +39,7 @@ extension Int {
     public var range: Range<Int> { return 0..<self }
 
     /// EZSE: Returns number of digits in the integer.
-    public var digits: Int {
+    public var numberOfDigits: Int {
         if self == 0 {
             return 1
         } else if Int(fabs(Double(self))) <= LONG_MAX {
