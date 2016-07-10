@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     @IBAction func actionShowModal(sender: UIButton) {
         
+        storyboard?.instantiateViewControllerWithIdentifier(RailroadViewController)
+        
         performSegueWithIdentifier("modal", sender: nil) { (segue) in
             let vc = segue.destinationViewController
             vc.view.backgroundColor = UIColor.redColor()

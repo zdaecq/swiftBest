@@ -59,6 +59,18 @@ extension UIStoryboard {
     }
 }
 
+extension UITableView {
+    func dequeueReusableCell<T:UITableViewCell>(identifier: T.Type) -> T {
+        let identifierString = String(identifier)
+        return self.dequeueReusableCellWithIdentifier(identifierString) as! T
+    }
+    
+    func dequeueReusableCell<T:UITableViewCell>(identifier: T.Type, forIndexPath indexPath:NSIndexPath) -> T {
+        let identifierString = String(identifier)
+        return self.dequeueReusableCellWithIdentifier(identifierString, forIndexPath:indexPath) as! T
+    }
+}
+
 
 
 //1
