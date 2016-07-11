@@ -52,24 +52,9 @@ func setNavigationBarTranslucentTotal() {
     UINavigationBar.appearance().translucent = true
 }
 
-extension UIStoryboard {
-    func instantiateViewControllerWithIdentifier<T>(identifier: T.Type) -> T {
-        let identifierString = String(identifier)
-        return instantiateViewControllerWithIdentifier(identifierString) as! T
-    }
-}
 
-extension UITableView {
-    func dequeueReusableCell<T:UITableViewCell>(identifier: T.Type) -> T {
-        let identifierString = String(identifier)
-        return self.dequeueReusableCellWithIdentifier(identifierString) as! T
-    }
-    
-    func dequeueReusableCell<T:UITableViewCell>(identifier: T.Type, forIndexPath indexPath:NSIndexPath) -> T {
-        let identifierString = String(identifier)
-        return self.dequeueReusableCellWithIdentifier(identifierString, forIndexPath:indexPath) as! T
-    }
-}
+
+
 
 
 

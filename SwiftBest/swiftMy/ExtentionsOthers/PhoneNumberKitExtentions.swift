@@ -9,7 +9,7 @@
 // TODO: Need to import PhoneNumberKit framwork to project
 
 //import PhoneNumberKit
-
+// TODO: "if let" or "guard let"
 //extension PhoneNumberKit {
     //static var currentPhoneCode : UInt64 {
         //return PhoneNumberKit().codeForCountry(NSLocale.currentLangugeCode)!

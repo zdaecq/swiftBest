@@ -8,11 +8,12 @@
 
 import Foundation
 
+// TODO: "if let" or "guard let"
 extension NSLocale {
-    static  var currentLangugeCode : String {
+    static  var currentLangugeCode: String {
         return  NSLocale.currentLocale().objectForKey(NSLocaleLanguageCode) as! String
     }
-    static var currentCountryName : String {
+    static var currentCountryName: String {
         return NSLocale.currentLocale().displayNameForKey(NSLocaleCountryCode, value: NSLocale.currentLangugeCode)!
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		661F70DF1D3175970030B615 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F70DE1D3175970030B615 /* TableViewController.swift */; };
 		661F70E11D3175F30030B615 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F70E01D3175F30030B615 /* TableViewCell.swift */; };
+		6654E9461D343AF90079ACF7 /* UITableViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654E9451D343AF90079ACF7 /* UITableViewExtentions.swift */; };
+		6654E9481D343B7E0079ACF7 /* UIStoryboardExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */; };
 		6686F7E21D19F2AB00A447C8 /* RailroadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E11D19F2AB00A447C8 /* RailroadViewController.swift */; };
 		6686F7E41D1B2D7E00A447C8 /* DesignableButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E31D1B2D7E00A447C8 /* DesignableButton1.swift */; };
 		6686F7E61D1B2D9200A447C8 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686F7E51D1B2D9200A447C8 /* DesignableButton.swift */; };
@@ -96,6 +98,8 @@
 /* Begin PBXFileReference section */
 		661F70DE1D3175970030B615 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		661F70E01D3175F30030B615 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6654E9451D343AF90079ACF7 /* UITableViewExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtentions.swift; sourceTree = "<group>"; };
+		6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtentions.swift; sourceTree = "<group>"; };
 		6686F7E11D19F2AB00A447C8 /* RailroadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailroadViewController.swift; sourceTree = "<group>"; };
 		6686F7E31D1B2D7E00A447C8 /* DesignableButton1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton1.swift; sourceTree = "<group>"; };
 		6686F7E51D1B2D9200A447C8 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 				66F84CF81D1880F900B54B01 /* UIImageExtensions.swift */,
 				CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */,
 				CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */,
+				6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */,
+				6654E9451D343AF90079ACF7 /* UITableViewExtentions.swift */,
 				CEF814D71D1D0B6300A5622B /* UITextFieldExtensions.swift */,
 				CEE3DD751D240636007B3812 /* UIViewExtensions */,
 				CEF814D81D1D0B6300A5622B /* UIViewControllerExtensions.swift */,
@@ -509,10 +515,12 @@
 				66F84D521D1880F900B54B01 /* UILabelExtensions.swift in Sources */,
 				66F84D371D1880F900B54B01 /* BlockButton.swift in Sources */,
 				66F84D401D1880F900B54B01 /* DoubleExtensions.swift in Sources */,
+				6654E9481D343B7E0079ACF7 /* UIStoryboardExtentions.swift in Sources */,
 				66F84D261D1880F900B54B01 /* DesignableTabBarController.swift in Sources */,
 				66F84D5C1D1880F900B54B01 /* LoadingView.swift in Sources */,
 				66F84D581D1880F900B54B01 /* UIViewExtensions.swift in Sources */,
 				66F84D531D1880F900B54B01 /* UISliderExtensions.swift in Sources */,
+				6654E9461D343AF90079ACF7 /* UITableViewExtentions.swift in Sources */,
 				66F84D471D1880F900B54B01 /* NSObjectExtensions.swift in Sources */,
 				66F84D321D1880F900B54B01 /* StringExtensions.swift in Sources */,
 				CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */,
