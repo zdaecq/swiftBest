@@ -74,8 +74,8 @@
 		66F84D591D1880F900B54B01 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */; };
 		66F84D5A1D1880F900B54B01 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D1F1D1880F900B54B01 /* Functions.swift */; };
 		66F84D5C1D1880F900B54B01 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D211D1880F900B54B01 /* LoadingView.swift */; };
-		66FB89E41D3811E500937D6B /* DPTransparentEdgesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB89E31D3811E500937D6B /* DPTransparentEdgesTableView.swift */; };
 		66FB8A0C1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB8A0B1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift */; };
+		66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */; };
 		CE0F9A741D269E4E007D2F64 /* NSLocaleExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */; };
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKitExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKitExtentions.swift */; };
 		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
@@ -167,8 +167,8 @@
 		66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		66F84D1F1D1880F900B54B01 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		66F84D211D1880F900B54B01 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		66FB89E31D3811E500937D6B /* DPTransparentEdgesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DPTransparentEdgesTableView.swift; path = "../../../../../../Downloads/DPTransparentEdgesTableView-master/Example/DPTransparentEdgesTableViewExample/DPTransparentEdgesTableView.swift"; sourceTree = "<group>"; };
 		66FB8A0B1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTransparentEdgesScrollView.swift; sourceTree = "<group>"; };
+		66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTransparentEdgesTableView.swift; sourceTree = "<group>"; };
 		CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLocaleExtentions.swift; sourceTree = "<group>"; };
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKitExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitExtentions.swift; sourceTree = "<group>"; };
 		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
@@ -364,7 +364,7 @@
 				CEF814F01D1D0FE900A5622B /* KeychainSwiftDistrib.swift */,
 				CEABED111D22BC8000455C05 /* LockView.swift */,
 				66FB8A0B1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift */,
-				66FB89E31D3811E500937D6B /* DPTransparentEdgesTableView.swift */,
+				66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -496,7 +496,6 @@
 				66F84D2F1D1880F900B54B01 /* EZSwiftFunctions.swift in Sources */,
 				CEF814E51D1D0D2500A5622B /* GMSMapViewExtensions.swift in Sources */,
 				CEF814DD1D1D0B6300A5622B /* UISearchBarExtensions.swift in Sources */,
-				66FB89E41D3811E500937D6B /* DPTransparentEdgesTableView.swift in Sources */,
 				CEF814F51D1D2C2D00A5622B /* BlockTap.swift in Sources */,
 				66F84CD11D1880AF00B54B01 /* AppDelegate.swift in Sources */,
 				66F84D251D1880F900B54B01 /* DesignableLabel.swift in Sources */,
@@ -518,6 +517,7 @@
 				66F84D2A1D1880F900B54B01 /* DesignableCheckbox.swift in Sources */,
 				66F84D3B1D1880F900B54B01 /* BlockWebView.swift in Sources */,
 				661F70E11D3175F30030B615 /* TableViewCell.swift in Sources */,
+				66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */,
 				66F84D501D1880F900B54B01 /* UIFontExtensions.swift in Sources */,
 				66F84D3F1D1880F900B54B01 /* CharacterExtensions.swift in Sources */,
 				66F84D521D1880F900B54B01 /* UILabelExtensions.swift in Sources */,
