@@ -10,8 +10,11 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //(tableView as! DPTransparentEdgesTableView).colo
+        //refreshGradient()
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
