@@ -40,6 +40,12 @@ extension UIViewController {
     func clearBackBarButtonTitle() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
     }
+    
+    func hideTabBar() {
+        if let tabBarController = tabBarController {
+            tabBarController.tabBar.hidden = true
+        }
+    }
 }
 
 // MARK: startNetwork executeForLastTextField

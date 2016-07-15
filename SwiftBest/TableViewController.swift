@@ -19,7 +19,7 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(TableViewCell)
+        let cell = tableView.dequeueReusableCell(TableViewCell.self, forIndexPath: indexPath)
         cell.name.text = "Index \(indexPath.row)"
         return cell
     }

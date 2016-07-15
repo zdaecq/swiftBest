@@ -9,6 +9,19 @@
 import UIKit
 
 
+
+extension Array {
+    func splitBy(subSize: Int) -> [[Element]] {
+        return 0.stride(to: self.count, by: subSize).map { startIndex in
+            let endIndex = startIndex.advancedBy(subSize, limit: self.count)
+            return Array(self[startIndex ..< endIndex])
+        }
+    }
+}
+//let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+//let chunks = arr.splitBy(5)
+//print(chunks) // [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12]]
+
 extension Int {
     var array: [Int] {
         return description.characters.map{Int(String($0)) ?? 0}
