@@ -74,6 +74,8 @@
 		66F84D591D1880F900B54B01 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */; };
 		66F84D5A1D1880F900B54B01 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D1F1D1880F900B54B01 /* Functions.swift */; };
 		66F84D5C1D1880F900B54B01 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F84D211D1880F900B54B01 /* LoadingView.swift */; };
+		66FB8A0C1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB8A0B1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift */; };
+		66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */; };
 		CE0F9A741D269E4E007D2F64 /* NSLocaleExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */; };
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKitExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKitExtentions.swift */; };
 		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
@@ -167,6 +169,8 @@
 		66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		66F84D1F1D1880F900B54B01 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		66F84D211D1880F900B54B01 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		66FB8A0B1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTransparentEdgesScrollView.swift; sourceTree = "<group>"; };
+		66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTransparentEdgesTableView.swift; sourceTree = "<group>"; };
 		CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLocaleExtentions.swift; sourceTree = "<group>"; };
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKitExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitExtentions.swift; sourceTree = "<group>"; };
 		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 				CEF814E71D1D0E3600A5622B /* KeyboardLayoutConstraint.swift */,
 				CEF814F01D1D0FE900A5622B /* KeychainSwiftDistrib.swift */,
 				CEABED111D22BC8000455C05 /* LockView.swift */,
+				66FB8A0B1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift */,
+				66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -503,6 +509,7 @@
 				66F84D4F1D1880F900B54B01 /* UIDeviceExtensions.swift in Sources */,
 				6686F7EA1D1B475900A447C8 /* DesignableView.swift in Sources */,
 				66F84D351D1880F900B54B01 /* NewExtentions.swift in Sources */,
+				66FB8A0C1D381ECA00937D6B /* DPTransparentEdgesScrollView.swift in Sources */,
 				66F84D271D1880F900B54B01 /* DesignableTextField1.swift in Sources */,
 				66F84D441D1880F900B54B01 /* NSBundleExtensions.swift in Sources */,
 				CE0F9A741D269E4E007D2F64 /* NSLocaleExtentions.swift in Sources */,
@@ -517,6 +524,7 @@
 				66F84D2A1D1880F900B54B01 /* DesignableCheckbox.swift in Sources */,
 				66F84D3B1D1880F900B54B01 /* BlockWebView.swift in Sources */,
 				661F70E11D3175F30030B615 /* TableViewCell.swift in Sources */,
+				66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */,
 				66F84D501D1880F900B54B01 /* UIFontExtensions.swift in Sources */,
 				66F84D3F1D1880F900B54B01 /* CharacterExtensions.swift in Sources */,
 				CEEFF1181D37A6510042D70E /* UITableViewCellExtentions.swift in Sources */,
