@@ -82,6 +82,7 @@
 		CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3DD731D24062F007B3812 /* BlurView.swift */; };
 		CEEFF1181D37A6510042D70E /* UITableViewCellExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF1171D37A6510042D70E /* UITableViewCellExtentions.swift */; };
 		CEEFF11C1D37BF500042D70E /* NSIndexPathExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF11B1D37BF500042D70E /* NSIndexPathExtentions.swift */; };
+		CEEFF12E1D38F6F00042D70E /* UICollectionViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF12D1D38F6F00042D70E /* UICollectionViewExtentions.swift */; };
 		CEF814DA1D1D0B6300A5622B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */; };
 		CEF814DB1D1D0B6300A5622B /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */; };
 		CEF814DD1D1D0B6300A5622B /* UISearchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */; };
@@ -177,6 +178,7 @@
 		CEE3DD731D24062F007B3812 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		CEEFF1171D37A6510042D70E /* UITableViewCellExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtentions.swift; sourceTree = "<group>"; };
 		CEEFF11B1D37BF500042D70E /* NSIndexPathExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSIndexPathExtentions.swift; sourceTree = "<group>"; };
+		CEEFF12D1D38F6F00042D70E /* UICollectionViewExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtentions.swift; sourceTree = "<group>"; };
 		CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtensions.swift; sourceTree = "<group>"; };
@@ -293,12 +295,13 @@
 				CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */,
 				CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */,
 				6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */,
-				6654E9451D343AF90079ACF7 /* UITableViewExtentions.swift */,
 				CEF814D71D1D0B6300A5622B /* UITextFieldExtensions.swift */,
 				CEEFF11B1D37BF500042D70E /* NSIndexPathExtentions.swift */,
+				6654E9451D343AF90079ACF7 /* UITableViewExtentions.swift */,
+				CEEFF12D1D38F6F00042D70E /* UICollectionViewExtentions.swift */,
 				CEEFF1171D37A6510042D70E /* UITableViewCellExtentions.swift */,
-				CEE3DD751D240636007B3812 /* UIViewExtensions */,
 				CEF814D81D1D0B6300A5622B /* UIViewControllerExtensions.swift */,
+				CEE3DD751D240636007B3812 /* UIViewExtensions */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				66F84D491D1880F900B54B01 /* NSURLExtensions.swift in Sources */,
 				CEF814DE1D1D0B6300A5622B /* UITextFieldExtensions.swift in Sources */,
 				CEF814DB1D1D0B6300A5622B /* NSAttributedStringExtensions.swift in Sources */,
+				CEEFF12E1D38F6F00042D70E /* UICollectionViewExtentions.swift in Sources */,
 				66F84D4A1D1880F900B54B01 /* UIApplicationExtensions.swift in Sources */,
 				66F84D551D1880F900B54B01 /* UITextViewExtensions.swift in Sources */,
 				CEF814EC1D1D0F5B00A5622B /* IsoCountries.swift in Sources */,

@@ -8,6 +8,133 @@
 
 import UIKit
 
+extension CGRect {
+    func newHeight(height: CGFloat) -> CGRect {
+        var rect = self
+        rect.size.height = height
+        return rect
+    }
+    func newWith(width: CGFloat) -> CGRect {
+        var rect = self
+        rect.size.width = width
+        return rect
+    }
+    func newY(y: CGFloat) -> CGRect {
+        var rect = self
+        rect.origin.y = y
+        return rect
+    }
+    func newX(x: CGFloat) -> CGRect {
+        var rect = self
+        rect.origin.x = x
+        return rect
+    }
+    func newOrigin(origin: CGPoint) -> CGRect {
+        var rect = self
+        rect.origin = origin
+        return rect
+    }
+    func newSize(size: CGSize) -> CGRect {
+        var rect = self
+        rect.size = size
+        return rect
+    }
+}
+
+
+extension CGSize {
+    func newHeight(height: CGFloat) -> CGSize {
+        var size = self
+        size.height = height
+        return size
+    }
+    func newWith(width: CGFloat) -> CGSize {
+        var size = self
+        size.width = width
+        return size
+    }
+}
+
+extension CGPoint {
+    func newX(x: CGFloat) -> CGPoint {
+        var p = self
+        p.x = x
+        return p
+    }
+    func newY(y: CGFloat) -> CGPoint {
+        var p = self
+        p.y = y
+        return p
+    }
+}
+
+
+extension Bool {
+    var not: Bool {
+        return !self
+    }
+}
+
+extension Int {
+    var minutes: NSTimeInterval {
+        return self.toDouble * 60
+    }
+    var hours: NSTimeInterval {
+        return self.minutes * 60
+    }
+    var days: NSTimeInterval {
+        return self.toDouble * 24.hours
+    }
+    var weeks: NSTimeInterval {
+        return self.toDouble * 7.days
+    }
+}
+
+
+//extension String {
+
+//    subscript (i: Int) -> Character {
+//        let x = startIndex.advancedBy(i)
+//        return self[x]
+//    }
+//    
+//    subscript (i: Int) -> String {
+//        return String(self[i] as Character)
+//    }
+//    
+//    subscript (r: Range<Int>) -> String {
+//        let start = startIndex.advancedBy(r.startIndex)
+//        let end = start.advancedBy(r.endIndex - r.startIndex)
+//        return self[Range(start ..< end)]
+//    }
+    
+//    var length: Int {
+//        return self.characters.count
+//    }
+//}
+
+
+
+
+extension SequenceType where Self.Generator.Element: Hashable {
+    
+    typealias T = Generator.Element
+    
+    func uniq() -> [T] {
+        var buffer = [T]()
+        var added = Set<T>()
+        for elem in self {
+            if added.contains(elem).not {
+                buffer.append(elem)
+                added.insert(elem)
+            }
+        }
+        return buffer
+    }
+}
+
+
+
 
 
 extension Array {

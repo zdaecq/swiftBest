@@ -8,6 +8,11 @@
 
 import UIKit
 
+//----- need for UIImagePickerController iOS8 bug that sets status bar to dark content
+func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
+    UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
+}//-----
+
 extension UIViewController {
     
     func setStatusBarBackgroundColor(color: UIColor) {
