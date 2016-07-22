@@ -78,6 +78,7 @@
 		66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */; };
 		CE0F9A741D269E4E007D2F64 /* NSLocaleExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */; };
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKitExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKitExtentions.swift */; };
+		CE6E3CE41D42063D00FA4C83 /* UIViewController + Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController + Child.swift */; };
 		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
 		CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3DD731D24062F007B3812 /* BlurView.swift */; };
 		CEEFF1181D37A6510042D70E /* UITableViewCellExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF1171D37A6510042D70E /* UITableViewCellExtentions.swift */; };
@@ -174,6 +175,7 @@
 		66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTransparentEdgesTableView.swift; sourceTree = "<group>"; };
 		CE0F9A731D269E4E007D2F64 /* NSLocaleExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLocaleExtentions.swift; sourceTree = "<group>"; };
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKitExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitExtentions.swift; sourceTree = "<group>"; };
+		CE6E3CE31D42063D00FA4C83 /* UIViewController + Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Child.swift"; sourceTree = "<group>"; };
 		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		CEE3DD731D24062F007B3812 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		CEEFF1171D37A6510042D70E /* UITableViewCellExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtentions.swift; sourceTree = "<group>"; };
@@ -300,7 +302,7 @@
 				6654E9451D343AF90079ACF7 /* UITableViewExtentions.swift */,
 				CEEFF12D1D38F6F00042D70E /* UICollectionViewExtentions.swift */,
 				CEEFF1171D37A6510042D70E /* UITableViewCellExtentions.swift */,
-				CEF814D81D1D0B6300A5622B /* UIViewControllerExtensions.swift */,
+				CE6E3CE51D42065600FA4C83 /* UIViewController */,
 				CEE3DD751D240636007B3812 /* UIViewExtensions */,
 			);
 			path = Extentions;
@@ -347,6 +349,15 @@
 				66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */,
 			);
 			path = ExtentionsOthers;
+			sourceTree = "<group>";
+		};
+		CE6E3CE51D42065600FA4C83 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEF814D81D1D0B6300A5622B /* UIViewControllerExtensions.swift */,
+				CE6E3CE31D42063D00FA4C83 /* UIViewController + Child.swift */,
+			);
+			name = UIViewController;
 			sourceTree = "<group>";
 		};
 		CEE3DD751D240636007B3812 /* UIViewExtensions */ = {
@@ -528,6 +539,7 @@
 				66F84D2A1D1880F900B54B01 /* DesignableCheckbox.swift in Sources */,
 				66F84D3B1D1880F900B54B01 /* BlockWebView.swift in Sources */,
 				661F70E11D3175F30030B615 /* TableViewCell.swift in Sources */,
+				CE6E3CE41D42063D00FA4C83 /* UIViewController + Child.swift in Sources */,
 				66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */,
 				66F84D501D1880F900B54B01 /* UIFontExtensions.swift in Sources */,
 				66F84D3F1D1880F900B54B01 /* CharacterExtensions.swift in Sources */,
