@@ -34,10 +34,13 @@ extension UISearchBar {
         searchBarTextField.clipsToBounds = true
     }
     
+    func setRoundedTextField() {
+        setCornerRadiusToTextField(14)
+    }
+    
     func setCustomColorToRoundedTextField(color: UIColor) {
-        
-        self.setCornerRadiusToTextField(14)
-        self.setCustomColorToTextField(color)
+        setRoundedTextField()
+        setCustomColorToTextField(color)
     }
     
 }
