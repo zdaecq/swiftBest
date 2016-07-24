@@ -1,86 +1,18 @@
 //
-//  UIViewControllerExtensions.swift
-//  OrderApp-Customer-iOS
+//  UIViewController + performSegueWithIdentifier.swift
+//  SwiftBest
 //
-//  Created by Yaroslav Bondar on 09.06.16.
-//  Copyright © 2016 SMediaLink. All rights reserved.
+//  Created by zdaecqze zdaecq on 24.07.16.
+//  Copyright © 2016 Bondar Yaroslav. All rights reserved.
 //
 
 import UIKit
 
-// MARK: startNetwork
-extension UIViewController {
-    
-    func startNetwork() {
-        dispatch_async(dispatch_get_main_queue(), {
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        })
-    }
-    
-    func finishNetwork() {
-        dispatch_async(dispatch_get_main_queue(), {
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-        })
-    }
-    
-}
-
-// MARK: Navigation extentions
-extension UIViewController {
-    
-    func setNavigationBarTranslucent() {
-        if let nc = navigationController {
-            nc.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-            nc.navigationBar.shadowImage = UIImage()
-            nc.navigationBar.translucent = true
-            nc.view.backgroundColor = UIColor.clearColor()
-        }
-    }
-    
-    func clearBackBarButtonTitle() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
-    }
-    
-    func hideTabBar() {
-        if let tabBarController = tabBarController {
-            tabBarController.tabBar.hidden = true
-        }
-    }
-}
-
-// MARK: startNetwork executeForLastTextField
-extension UIViewController {
-    
-    func executeForLastTextField(textField: UITextField, onComplition complition: ()->() ) {
-        let nextTag: Int = textField.tag + 1
-        let nextResponder: UIResponder? = textField.superview?.superview?.viewWithTag(nextTag)
-        
-        if let nextResponder = nextResponder {
-            nextResponder.becomeFirstResponder()
-        } else {
-            complition()
-        }
-    }
-}
-
-
-// MARK: addTapBackgroundGestureToHideKeyboard
-extension UIViewController {
-    
-    func addTapBackgroundGestureToHideKeyboard() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}
-
 // MARK: UnwindSegue
 extension UIViewController {
-    @IBAction public func unwindToViewController (sender: UIStoryboardSegue){}
+    @IBAction public func unwindToViewController (sender: UIStoryboardSegue) {}
 }
+
 
 // MARK: performSegueWithIdentifier
 extension UIViewController {
@@ -98,6 +30,7 @@ extension UIViewController {
     }
     
     typealias ConfiguratePerformSegue = (UIStoryboardSegue) -> ()
+    
     func performSegueWithIdentifier(identifier: String, sender: AnyObject?, configurate: ConfiguratePerformSegue?) {
         swizzlingPrepareForSegue()
         configuratePerformSegue = configurate

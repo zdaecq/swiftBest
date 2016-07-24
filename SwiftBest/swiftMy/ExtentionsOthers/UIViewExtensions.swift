@@ -25,6 +25,24 @@ extension UIView {
     }
 }
 
+extension UIView {
+    
+    func addBackgroundImage(named: String) {
+        let image = UIImage(named: named)
+        let imageView = UIImageView(frame: frame)
+        imageView.image = image
+        addSubview(imageView)
+        sendSubviewToBack(imageView)
+    }
+    
+    @nonobjc func addBackgroundImage(image: UIImage) {
+        let imageView = UIImageView(frame: frame)
+        imageView.image = image
+        addSubview(imageView)
+        sendSubviewToBack(imageView)
+    }
+}
+
 // MARK: Custom UIView Initilizers
 extension UIView {
     /// EZSwiftExtensions
