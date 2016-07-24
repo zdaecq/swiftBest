@@ -13,7 +13,7 @@ extension UIViewController {
     // container must be view of UIViewController
     func addChildVC(vc: UIViewController, toContainer container: UIView) {
 
-        // возможно не надо эту строчку
+        // возможно не надо эту строчку, она вызывается в addChildViewController
         vc.willMoveToParentViewController(self)
 
         vc.view.frame = container.bounds

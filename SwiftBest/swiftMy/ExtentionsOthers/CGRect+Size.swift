@@ -9,6 +9,15 @@
 import UIKit
 
 extension CGRect {
+
+    init(rect: CGRect, padding: CGFloat) {
+        self.init(x: rect.x + padding, y: rect.y + padding, width: rect.w - padding*2, height: rect.h - padding*2)
+    }
+
+    func withPadding(padding: CGFloat) -> CGRect {
+        return CGRect(x: self.x + padding, y: self.y + padding, width: self.w - padding*2, height: self.h - padding*2)
+    }
+
     /// EZSE: Easier initialization of CGRect
     public init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat) {
         self.init(x: x, y: y, width: w, height: h)
