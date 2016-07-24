@@ -84,7 +84,7 @@ extension UIView {
     
     /// EZSwiftExtensions
     public func drawCircle(fillColor fillColor: UIColor, strokeColor: UIColor, strokeWidth: CGFloat) {
-        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: self.w, height: self.w), cornerRadius: self.w/2)
+        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: self.width, height: self.width), cornerRadius: self.width/2)
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.CGPath
         shapeLayer.fillColor = fillColor.CGColor
@@ -95,7 +95,7 @@ extension UIView {
     
     /// EZSwiftExtensions
     public func drawStroke(width width: CGFloat, color: UIColor) {
-        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: self.w, height: self.w), cornerRadius: self.w/2)
+        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: self.width, height: self.width), cornerRadius: self.width/2)
         let shapeLayer = CAShapeLayer ()
         shapeLayer.path = path.CGPath
         shapeLayer.fillColor = UIColor.clearColor().CGColor

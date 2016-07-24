@@ -66,7 +66,7 @@ extension UIViewController {
                 return visibleViewController.navigationBarHeight
             }
             if let nav = self.navigationController {
-                return nav.navigationBar.h
+                return nav.navigationBar.height
             }
             return 0
         }
@@ -75,7 +75,7 @@ extension UIViewController {
     /// EZSwiftExtensions
     public var applicationFrame: CGRect {
         get {
-            return CGRect(x: view.x, y: top, width: view.w, height: bottom - top)
+            return CGRect(x: view.x, y: top, width: view.width, height: bottom - top)
         }
     }
     

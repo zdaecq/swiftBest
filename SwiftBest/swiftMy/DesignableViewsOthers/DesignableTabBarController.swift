@@ -94,7 +94,7 @@ import UIKit
         
         for item in self.tabBar.items as [UITabBarItem]! {
             if let image = item.image {
-                item.image = image.imageWithColor(self.normalTint).imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+                item.image = image.withColor(self.normalTint).imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             }
         }
     }

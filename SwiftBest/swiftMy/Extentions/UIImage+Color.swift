@@ -9,7 +9,9 @@
 import UIKit
 
 extension UIImage {
-    func imageWithColor(tintColor: UIColor) -> UIImage {
+    
+    /// EZSE: Use current image for pattern of color
+    public func withColor(tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         
         let context = UIGraphicsGetCurrentContext()

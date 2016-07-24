@@ -8,22 +8,23 @@
 
 import UIKit
 
+// MARK: - Resize
 extension UIView {
-    
+
     /// EZSwiftExtensions, resizes this view so it fits the largest subview
     public func resizeToFitSubviews() {
         var width: CGFloat = 0
         var height: CGFloat = 0
         for someView in self.subviews {
             let aView = someView
-            let newWidth = aView.x + aView.w
-            let newHeight = aView.y + aView.h
+            let newWidth = aView.x + aView.width
+            let newHeight = aView.y + aView.height
             width = max(width, newWidth)
             height = max(height, newHeight)
         }
         frame = CGRect(x: x, y: y, width: width, height: height)
     }
-    
+
     /// EZSwiftExtensions, resizes this view so it fits the largest subview
     public func resizeToFitSubviews(tagsToIgnore: [Int]) {
         var width: CGFloat = 0
@@ -31,65 +32,69 @@ extension UIView {
         for someView in self.subviews {
             let aView = someView
             if !tagsToIgnore.contains(someView.tag) {
-                let newWidth = aView.x + aView.w
-                let newHeight = aView.y + aView.h
+                let newWidth = aView.x + aView.width
+                let newHeight = aView.y + aView.height
                 width = max(width, newWidth)
                 height = max(height, newHeight)
             }
         }
         frame = CGRect(x: x, y: y, width: width, height: height)
     }
-    
+
     /// EZSwiftExtensions
     public func resizeToFitWidth() {
-        let currentHeight = self.h
+        let currentHeight = self.height
         self.sizeToFit()
-        self.h = currentHeight
+        self.height = currentHeight
     }
-    
+
     /// EZSwiftExtensions
     public func resizeToFitHeight() {
-        let currentWidth = self.w
+        let currentWidth = self.width
         self.sizeToFit()
-        self.w = currentWidth
+        self.width = currentWidth
     }
-    
+}
+
+
+// MARK: - Frame
+extension UIView {
     /// EZSwiftExtensions
     public var x: CGFloat {
         get {
             return self.frame.origin.x
         } set(value) {
-            self.frame = CGRect(x: value, y: self.y, width: self.w, height: self.h)
+            self.frame = CGRect(x: value, y: self.y, width: self.width, height: self.height)
         }
     }
-    
+
     /// EZSwiftExtensions
     public var y: CGFloat {
         get {
             return self.frame.origin.y
         } set(value) {
-            self.frame = CGRect(x: self.x, y: value, width: self.w, height: self.h)
+            self.frame = CGRect(x: self.x, y: value, width: self.width, height: self.height)
         }
     }
-    
+
     /// EZSwiftExtensions
-    public var w: CGFloat {
+    public var width: CGFloat {
         get {
             return self.frame.size.width
         } set(value) {
-            self.frame = CGRect(x: self.x, y: self.y, width: value, height: self.h)
+            self.frame = CGRect(x: self.x, y: self.y, width: value, height: self.height)
         }
     }
-    
+
     /// EZSwiftExtensions
-    public var h: CGFloat {
+    public var height: CGFloat {
         get {
             return self.frame.size.height
         } set(value) {
-            self.frame = CGRect(x: self.x, y: self.y, width: self.w, height: value)
+            self.frame = CGRect(x: self.x, y: self.y, width: self.width, height: value)
         }
     }
-    
+
     /// EZSwiftExtensions
     public var left: CGFloat {
         get {
@@ -98,16 +103,16 @@ extension UIView {
             self.x = value
         }
     }
-    
+
     /// EZSwiftExtensions
     public var right: CGFloat {
         get {
-            return self.x + self.w
+            return self.x + self.width
         } set(value) {
-            self.x = value - self.w
+            self.x = value - self.width
         }
     }
-    
+
     /// EZSwiftExtensions
     public var top: CGFloat {
         get {
@@ -116,25 +121,16 @@ extension UIView {
             self.y = value
         }
     }
-    
+
     /// EZSwiftExtensions
     public var bottom: CGFloat {
         get {
-            return self.y + self.h
+            return self.y + self.height
         } set(value) {
-            self.y = value - self.h
+            self.y = value - self.height
         }
     }
-    
-    /// EZSwiftExtensions
-    public var origin: CGPoint {
-        get {
-            return self.frame.origin
-        } set(value) {
-            self.frame = CGRect(origin: value, size: self.frame.size)
-        }
-    }
-    
+
     /// EZSwiftExtensions
     public var centerX: CGFloat {
         get {
@@ -143,7 +139,7 @@ extension UIView {
             self.center.x = value
         }
     }
-    
+
     /// EZSwiftExtensions
     public var centerY: CGFloat {
         get {
@@ -152,7 +148,16 @@ extension UIView {
             self.center.y = value
         }
     }
-    
+
+    /// EZSwiftExtensions
+    public var origin: CGPoint {
+        get {
+            return self.frame.origin
+        } set(value) {
+            self.frame = CGRect(origin: value, size: self.frame.size)
+        }
+    }
+
     /// EZSwiftExtensions
     public var size: CGSize {
         get {
@@ -161,30 +166,29 @@ extension UIView {
             self.frame = CGRect(origin: self.frame.origin, size: value)
         }
     }
-    
+
     /// EZSwiftExtensions
     public func leftOffset(offset: CGFloat) -> CGFloat {
         return self.left - offset
     }
-    
+
     /// EZSwiftExtensions
     public func rightOffset(offset: CGFloat) -> CGFloat {
         return self.right + offset
     }
-    
+
     /// EZSwiftExtensions
     public func topOffset(offset: CGFloat) -> CGFloat {
         return self.top - offset
     }
-    
+
     /// EZSwiftExtensions
     public func bottomOffset(offset: CGFloat) -> CGFloat {
         return self.bottom + offset
     }
-    
+
     /// EZSwiftExtensions
     public func alignRight(offset: CGFloat) -> CGFloat {
-        return self.w - offset
+        return self.height - offset
     }
 }
-

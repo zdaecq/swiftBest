@@ -32,22 +32,22 @@ extension UILabel {
 
     /// EZSwiftExtensions
     public func getEstimatedHeight() -> CGFloat {
-        return sizeThatFits(CGSize(width: w, height: CGFloat.max)).height
+        return sizeThatFits(CGSize(width: width, height: CGFloat.max)).height
     }
 
     /// EZSwiftExtensions
     public func getEstimatedWidth() -> CGFloat {
-        return sizeThatFits(CGSize(width: CGFloat.max, height: h)).width
+        return sizeThatFits(CGSize(width: CGFloat.max, height: height)).width
     }
 
     /// EZSwiftExtensions
     public func fitHeight() {
-        self.h = getEstimatedHeight()
+        self.height = getEstimatedHeight()
     }
 
     /// EZSwiftExtensions
     public func fitWidth() {
-        self.w = getEstimatedWidth()
+        self.width = getEstimatedWidth()
     }
 
     /// EZSwiftExtensions

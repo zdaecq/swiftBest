@@ -46,7 +46,7 @@ extension UIView {
             return
         }
         
-        self.x = parentView.w/2 - self.w/2
+        self.x = parentView.width/2 - self.width/2
     }
     
     /// EZSE: Centers view in superview vertically
@@ -56,7 +56,7 @@ extension UIView {
             return
         }
         
-        self.y = parentView.h/2 - self.h/2
+        self.y = parentView.height/2 - self.height/2
     }
     
     /// EZSE: Centers view in superview horizontally & vertically
