@@ -14,7 +14,7 @@ extension UIButton {
 	// swiftlint:disable function_parameter_count
 	public convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, target: AnyObject, action: Selector) {
 		self.init(frame: CGRect(x: x, y: y, width: w, height: h))
-		addTarget(target, action: action, forControlEvents: UIControlEvents.TouchUpInside)
+		addTarget(target, action: action, forControlEvents: .TouchUpInside)
 	}
 	// swiftlint:enable function_parameter_count
 

@@ -7,7 +7,6 @@
 //
 import UIKit
 
-//TODO: others standart video, gif
 
 public struct ez {
     /// EZSE: Returns app's name
@@ -52,7 +51,7 @@ public struct ez {
         return String.fromCString(machine)!
     }
 
-    /// EZSE: Returns true if DEBUG mode is active //TODO: Add to readme
+    /// EZSE: Returns true if DEBUG mode is active
     public static var isDebug: Bool {
     #if DEBUG
         return true
@@ -61,7 +60,7 @@ public struct ez {
     #endif
     }
 
-    /// EZSE: Returns true if RELEASE mode is active //TODO: Add to readme
+    /// EZSE: Returns true if RELEASE mode is active
     public static var isRelease: Bool {
     #if DEBUG
         return false
@@ -70,7 +69,7 @@ public struct ez {
     #endif
     }
 
-    /// EZSE: Returns true if its simulator and not a device //TODO: Add to readme
+    /// EZSE: Returns true if its simulator and not a device
     public static var isSimulator: Bool {
     #if (arch(i386) || arch(x86_64)) && os(iOS)
         return true
@@ -79,7 +78,7 @@ public struct ez {
     #endif
     }
 
-    /// EZSE: Returns true if its on a device and not a simulator //TODO: Add to readme
+    /// EZSE: Returns true if its on a device and not a simulator
     public static var isDevice: Bool {
     #if (arch(i386) || arch(x86_64)) && os(iOS)
         return false
@@ -174,7 +173,7 @@ public struct ez {
     
     #endif
 
-    /// EZSE: Returns the locale country code. An example value might be "ES". //TODO: Add to readme
+    /// EZSE: Returns the locale country code. An example value might be "ES".
     public static var currentRegion: String? {
         return NSLocale.currentLocale().objectForKey(NSLocaleCountryCode) as? String
     }
@@ -196,7 +195,6 @@ public struct ez {
         runThisAfterDelay(seconds: seconds, queue: dispatch_get_main_queue(), after: after)
     }
 
-    //TODO: Make this easier
     /// EZSE: Runs function after x seconds with dispatch_queue, use this syntax: dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)
     public static func runThisAfterDelay(seconds seconds: Double, queue: dispatch_queue_t, after: ()->()) {
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC)))

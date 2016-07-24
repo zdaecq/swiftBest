@@ -19,6 +19,10 @@ extension UICollectionView {
         let identifierString = String(identifier)
         return dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: identifierString, forIndexPath: indexPath) as! T
     }
+}
+
+
+extension UICollectionView {
     
     func registerNibCell <T: UICollectionViewCell>(identifier: T.Type) {
         let identifierString = String(identifier)

@@ -72,12 +72,12 @@ extension UIDevice {
         return DeviceList[deviceModel()] ?? deviceModel()
     }
 
-    /// EZSE: Returns true if the device is iPhone //TODO: Add to readme
+    /// EZSE: Returns true if the device is iPhone
     public class func isPhone() -> Bool {
         return UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone
     }
     
-    /// EZSE: Returns true if the device is iPad //TODO: Add to readme
+    /// EZSE: Returns true if the device is iPad
     public class func isPad() -> Bool {
         return UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad
     }

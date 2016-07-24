@@ -6,7 +6,7 @@
 //  Copyright © 2016 SMediaLink. All rights reserved.
 //
 
-// TODO: Need to import PromiseKit framwork to project
+// MARK: Need to import PromiseKit framwork to project
 
 //import UIKit
 //import PromiseKit

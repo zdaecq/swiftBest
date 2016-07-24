@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//TODO: readme
+
 class UIColoredView: UIView {
     init() {
         super.init(frame: CGRect(x: 100, y: 100, w: 100, h: 100))

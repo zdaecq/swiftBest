@@ -53,7 +53,6 @@ extension UIView {
         addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color)
     }
     
-    //TODO: add to readme
     /// EZSwiftExtensions
     public func addBorderTopWithPadding(size size: CGFloat, color: UIColor, padding: CGFloat) {
         addBorderUtility(x: padding, y: 0, width: frame.width - padding*2, height: size, color: color)

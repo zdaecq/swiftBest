@@ -9,10 +9,9 @@
 import Foundation
 
 extension Character {
-    /// EZSE: Converts Character to String //TODO: Add to readme
+    /// EZSE: Converts Character to String
     public var toString: String { return String(self) }
 
     /// EZSE: If the character represents an integer that fits into an Int, returns the corresponding integer.
-    ///TODO: Add to readme
     public var toInt: Int? { return Int(String(self)) }
 }

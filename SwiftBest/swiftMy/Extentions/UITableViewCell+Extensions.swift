@@ -9,8 +9,8 @@
 import UIKit
 
 extension UITableViewCell {
+    
     func removeMargins() {
-        
         if self.respondsToSelector(Selector("setSeparatorInset:")) {
             self.separatorInset = UIEdgeInsetsZero
         }

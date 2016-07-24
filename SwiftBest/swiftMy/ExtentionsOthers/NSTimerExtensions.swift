@@ -21,7 +21,6 @@ extension NSTimer {
         runThisAfterDelay(seconds: seconds, queue: dispatch_get_main_queue(), after: after)
     }
 
-    //TODO: Make this easier
     /// EZSwiftExtensions - dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)
     public static func runThisAfterDelay(seconds seconds: Double, queue: dispatch_queue_t, after: ()->()) {
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC)))
