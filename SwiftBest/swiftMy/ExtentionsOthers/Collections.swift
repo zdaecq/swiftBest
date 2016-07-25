@@ -25,6 +25,18 @@ extension SequenceType where Self.Generator.Element: Hashable {
     }
 }
 
+extension Array {
+
+    func indexOfObject<T: Equatable>(array: Array<T>, object: T) -> Int? {
+        for i in 0 ..< array.count {
+            if (array[i] == object) {
+                return i
+            }
+        }
+        return nil
+    }
+}
+
 
 //let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 //let chunks = arr.splitBy(5)
