@@ -132,7 +132,7 @@ extension Array where Element: Equatable {
 
     /// EZSE: Difference of self and the input arrays.
     public func difference(values: [Element]...) -> [Element] {
-        var result = [Element]()
+        var result : [Element] = []
         elements: for element in self {
             for value in values {
                 //  if a value is in both self and one of the values arrays

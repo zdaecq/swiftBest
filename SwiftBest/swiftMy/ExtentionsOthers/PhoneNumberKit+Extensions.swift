@@ -12,6 +12,6 @@
 // TODO: "if let" or "guard let"
 //extension PhoneNumberKit {
     //static var currentPhoneCode : UInt64 {
-        //return PhoneNumberKit().codeForCountry(NSLocale.currentLangugeCode)!
+        //return PhoneNumberKit().codeForCountry(NSLocale.currentLanguageCode)!
     //}
 //}

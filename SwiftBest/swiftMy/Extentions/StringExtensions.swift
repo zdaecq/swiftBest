@@ -38,6 +38,10 @@ extension String {
         return self[index]
     }
 
+    public subscript (integerIndex: Int) -> String {
+        return String(self[integerIndex] as Character)
+    }
+
     /// EZSE: Cut string from range
     public subscript(integerRange: Range<Int>) -> String {
         let start = startIndex.advancedBy(integerRange.startIndex)
@@ -50,10 +54,7 @@ extension String {
     public var length: Int {
         return self.characters.count
     }
-    
 
-    
-    
 
     /// EZSE: Counts number of instances of the input inside String
     public func count(substring: String) -> Int {
@@ -96,7 +97,7 @@ extension String {
         if let range = self.rangeOfString(subString, options: searchOption) where !range.isEmpty {
             return self.startIndex.distanceTo(range.startIndex)
         }
-        return -1;
+        return -1
     }
 
     /// EZSE: split string using a spearator string, returns an array of string
@@ -126,7 +127,7 @@ extension String {
         return (regex?.numberOfMatchesInString(str, options: NSMatchingOptions(), range: NSMakeRange(0, str.length)) ?? -1) + 1
     }
 
-    internal func rangeFromNSRange(nsRange : NSRange) -> Range<String.Index>? {
+    internal func rangeFromNSRange(nsRange: NSRange) -> Range<String.Index>? {
         let from16 = utf16.startIndex.advancedBy(nsRange.location, limit: utf16.endIndex)
         let to16 = from16.advancedBy(nsRange.length, limit: utf16.endIndex)
         if let from = String.Index(from16, within: self),
@@ -149,7 +150,7 @@ extension String {
         let firstMatch = dataDetector?.firstMatchInString(self, options: NSMatchingOptions.ReportCompletion, range: NSRange(location: 0, length: length))
         return (firstMatch?.range.location != NSNotFound && firstMatch?.URL?.scheme == "mailto")
     }
-    
+
 //    var isEmail: Bool {
 //        do {
 //            let regex = try NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .CaseInsensitive)
@@ -251,13 +252,13 @@ extension String {
     public var toNSString: NSString { get { return self as NSString } }
 
     #if os(iOS)
-    
+
     ///EZSE: Returns bold NSAttributedString
     public func bold() -> NSAttributedString {
         let boldString = NSMutableAttributedString(string: self, attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(UIFont.systemFontSize())])
         return boldString
     }
-    
+
     #endif
 
     ///EZSE: Returns underlined NSAttributedString
@@ -265,7 +266,7 @@ extension String {
         let underlineString = NSAttributedString(string: self, attributes: [NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue])
         return underlineString
     }
-    
+
     #if os(iOS)
 
     ///EZSE: Returns italic NSAttributedString
@@ -273,7 +274,7 @@ extension String {
         let italicString = NSMutableAttributedString(string: self, attributes: [NSFontAttributeName: UIFont.italicSystemFontOfSize(UIFont.systemFontSize())])
         return italicString
     }
-    
+
     #endif
 
     #if os(iOS)
@@ -282,14 +283,14 @@ extension String {
     func height(width: CGFloat, font: UIFont, lineBreakMode: NSLineBreakMode?) -> CGFloat {
         var attrib: [String: AnyObject] = [NSFontAttributeName: font]
         if lineBreakMode != nil {
-            let paragraphStyle = NSMutableParagraphStyle();
-            paragraphStyle.lineBreakMode = lineBreakMode!;
-            attrib.updateValue(paragraphStyle, forKey: NSParagraphStyleAttributeName);
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineBreakMode = lineBreakMode!
+            attrib.updateValue(paragraphStyle, forKey: NSParagraphStyleAttributeName)
         }
-        let size = CGSize(width: width, height: CGFloat(DBL_MAX));
+        let size = CGSize(width: width, height: CGFloat(DBL_MAX))
         return ceil((self as NSString).boundingRectWithSize(size, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes:attrib, context: nil).height)
     }
-    
+
     #endif
 
     ///EZSE: Returns NSAttributedString
@@ -300,22 +301,22 @@ extension String {
 
     ///EZSE: Returns NSAttributedString
     public func colorSubString(subString: String, color: UIColor) -> NSMutableAttributedString {
-        var start = 0;
+        var start = 0
         var ranges: [NSRange] = []
         while true {
             let range = (self as NSString).rangeOfString(subString, options: NSStringCompareOptions.LiteralSearch, range: NSMakeRange(start, (self as NSString).length - start))
             if range.location == NSNotFound {
-                break;
+                break
             } else {
                 ranges.append(range)
                 start = range.location + range.length
             }
         }
-        let attrText = NSMutableAttributedString(string: self);
+        let attrText = NSMutableAttributedString(string: self)
         for range in ranges {
             attrText.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
         }
-        return attrText;
+        return attrText
     }
 
     /// EZSE: Checks if String contains Emoji
@@ -328,32 +329,31 @@ extension String {
         }
         return false
     }
-    
+
     // Returns true if the string has at least one character in common with matchCharacters.
     func containsCharactersIn(matchCharacters: String) -> Bool {
         let characterSet = NSCharacterSet(charactersInString: matchCharacters)
         return self.rangeOfCharacterFromSet(characterSet) != nil
     }
-    
+
     // Returns true if the string contains only characters found in matchCharacters.
     func containsOnlyCharactersIn(matchCharacters: String) -> Bool {
         let disallowedCharacterSet = NSCharacterSet(charactersInString: matchCharacters).invertedSet
         return self.rangeOfCharacterFromSet(disallowedCharacterSet) == nil
     }
-    
+
     // Returns true if the string has no characters in common with matchCharacters.
     func doesNotContainCharactersIn(matchCharacters: String) -> Bool {
         let characterSet = NSCharacterSet(charactersInString: matchCharacters)
         return self.rangeOfCharacterFromSet(characterSet) == nil
     }
-    
+
     // Returns true if the string represents a proper numeric value.
     // This method uses the device's current locale setting to determine
     // which decimal separator it will accept.
-    func isNumeric() -> Bool
-    {
+    func isNumeric() -> Bool {
         let scanner = NSScanner(string: self)
-        
+
         // A newly-created scanner has no locale by default.
         // We'll set our scanner's locale to the user's locale
         // so that it recognizes the decimal separator that
@@ -361,22 +361,22 @@ extension String {
         // "." is the decimal separator, while in many parts
         // of Europe, "," is used).
         scanner.locale = NSLocale.currentLocale()
-        
+
         return scanner.scanDecimal(nil) && scanner.atEnd
     }
-    
+
     func trim() -> String {
-        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
     }
-    
+
     func isNotEmpty() -> Bool {
-        return !self.trim().isEmpty;
+        return !self.trim().isEmpty
     }
-    
+
     public func toURL() -> NSURL? {
         return NSURL(string: self)
     }
-    
+
 
 }
 

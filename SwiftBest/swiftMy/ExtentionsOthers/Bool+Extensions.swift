@@ -15,4 +15,8 @@ extension Bool {
         self = !self
         return self
     }
+    
+    var not: Bool {
+        return !self
+    }
 }
