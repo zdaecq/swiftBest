@@ -123,6 +123,7 @@
 		CEA449601D475B5000097E6C /* NSDate+localizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4495D1D475B5000097E6C /* NSDate+localizedString.swift */; };
 		CEA449611D475B5000097E6C /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4495E1D475B5000097E6C /* TableView.swift */; };
 		CEA449631D475B6E00097E6C /* UIViewController+UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449621D475B6E00097E6C /* UIViewController+UIActivityIndicator.swift */; };
+		CEA449691D47A67500097E6C /* UIViewController+ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449681D47A67500097E6C /* UIViewController+ImagePicker.swift */; };
 		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
 		CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3DD731D24062F007B3812 /* BlurView.swift */; };
 		CEEFF1181D37A6510042D70E /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */; };
@@ -263,6 +264,7 @@
 		CEA4495D1D475B5000097E6C /* NSDate+localizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+localizedString.swift"; sourceTree = "<group>"; };
 		CEA4495E1D475B5000097E6C /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		CEA449621D475B6E00097E6C /* UIViewController+UIActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIActivityIndicator.swift"; sourceTree = "<group>"; };
+		CEA449681D47A67500097E6C /* UIViewController+ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ImagePicker.swift"; sourceTree = "<group>"; };
 		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		CEE3DD731D24062F007B3812 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ../ExtentionsOthers/BlurView.swift; sourceTree = "<group>"; };
 		CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
@@ -525,6 +527,7 @@
 				6637E8751D45396000BBFB24 /* UIViewController+Segue.swift */,
 				CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */,
 				6637E8771D4539D900BBFB24 /* UIViewController+Network.swift */,
+				CEA449681D47A67500097E6C /* UIViewController+ImagePicker.swift */,
 				CEF814D81D1D0B6300A5622B /* UIViewController+Navigation.swift */,
 				6637E87B1D453CB900BBFB24 /* UIViewController+Notifications.swift */,
 				66F84D1C1D1880F900B54B01 /* UIViewController+Size.swift */,
@@ -653,6 +656,7 @@
 				66F84D241D1880F900B54B01 /* DesignableImageView.swift in Sources */,
 				66F84D431D1880F900B54B01 /* NSAttributedStringExtension.swift in Sources */,
 				6686F7E21D19F2AB00A447C8 /* RailroadViewController.swift in Sources */,
+				CEA449691D47A67500097E6C /* UIViewController+ImagePicker.swift in Sources */,
 				CEF815091D1D79B500A5622B /* Promise+Extensions.swift in Sources */,
 				6637E87C1D453CB900BBFB24 /* UIViewController+Notifications.swift in Sources */,
 				66812BCC1D46C21900E3FD99 /* NSLocale+Phone.swift in Sources */,
