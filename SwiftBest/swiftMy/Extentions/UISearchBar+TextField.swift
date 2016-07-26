@@ -10,16 +10,20 @@ import UIKit
 
 extension UISearchBar {
     
+    func getTextField() -> UITextField {
+        return valueForKey("searchField") as! UITextField
+    }
+    
     func setCustomColorToTextField(color: UIColor) {
         
         //setting color to textField text and placeholder
-        let searchBarTextField = self.valueForKey("searchField") as! UITextField
+        let searchBarTextField = getTextField()
         searchBarTextField.textColor = color
         searchBarTextField.attributedPlaceholder = NSAttributedString(string:searchBarTextField.placeholder!, attributes:[NSForegroundColorAttributeName: color])
         
         //setting color to clear button
         let clearButton = searchBarTextField.valueForKey("clearButton") as! UIButton
-        clearButton.setImage(clearButton.imageView?.image?.imageWithRenderingMode(.AlwaysTemplate), forState: .Normal)
+        clearButton.setImage(clearButton.imageView?.image?.imageWithRenderingMode(.AlwaysTemplate), forState: UIControlState.Normal)
         clearButton.tintColor = color
         
         //setting color to glass icon
@@ -43,4 +47,8 @@ extension UISearchBar {
         setCustomColorToTextField(color)
     }
     
+    func setCursorColor(color: UIColor) {
+        let searchBarTextField = getTextField()
+        searchBarTextField.tintColor = color
+    }
 }

@@ -117,13 +117,14 @@
 		CE0F9A741D269E4E007D2F64 /* NSLocale+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A731D269E4E007D2F64 /* NSLocale+Language.swift */; };
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
+		CEA4494E1D4735D700097E6C /* UISwitch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */; };
 		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
 		CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3DD731D24062F007B3812 /* BlurView.swift */; };
 		CEEFF1181D37A6510042D70E /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */; };
 		CEEFF12E1D38F6F00042D70E /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF12D1D38F6F00042D70E /* UICollectionView+Extensions.swift */; };
 		CEF814DA1D1D0B6300A5622B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */; };
 		CEF814DB1D1D0B6300A5622B /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */; };
-		CEF814DD1D1D0B6300A5622B /* UISearchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */; };
+		CEF814DD1D1D0B6300A5622B /* UISearchBar+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D61D1D0B6300A5622B /* UISearchBar+TextField.swift */; };
 		CEF814DE1D1D0B6300A5622B /* UITextField+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D71D1D0B6300A5622B /* UITextField+Size.swift */; };
 		CEF814DF1D1D0B6300A5622B /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814D81D1D0B6300A5622B /* UIViewController+Navigation.swift */; };
 		CEF814E41D1D0D2500A5622B /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF814E21D1D0D2500A5622B /* Alamofire+Extensions.swift */; };
@@ -251,13 +252,14 @@
 		CE0F9A731D269E4E007D2F64 /* NSLocale+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+Language.swift"; sourceTree = "<group>"; };
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumberKit+Extensions.swift"; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extensions.swift"; sourceTree = "<group>"; };
 		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		CEE3DD731D24062F007B3812 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ../ExtentionsOthers/BlurView.swift; sourceTree = "<group>"; };
 		CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		CEEFF12D1D38F6F00042D70E /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		CEF814D31D1D0B6300A5622B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
-		CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtensions.swift; sourceTree = "<group>"; };
+		CEF814D61D1D0B6300A5622B /* UISearchBar+TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+TextField.swift"; sourceTree = "<group>"; };
 		CEF814D71D1D0B6300A5622B /* UITextField+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Size.swift"; sourceTree = "<group>"; };
 		CEF814D81D1D0B6300A5622B /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		CEF814E21D1D0D2500A5622B /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
@@ -431,8 +433,9 @@
 				CEF814D41D1D0B6300A5622B /* NSAttributedStringExtensions.swift */,
 				66F84CF51D1880F900B54B01 /* NSUserDefaultsExtension.swift */,
 				66F84CF61D1880F900B54B01 /* StringExtensions.swift */,
-				CEF814D61D1D0B6300A5622B /* UISearchBarExtensions.swift */,
 				6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */,
+				CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */,
+				CEF814D61D1D0B6300A5622B /* UISearchBar+TextField.swift */,
 				CEEFF12D1D38F6F00042D70E /* UICollectionView+Extensions.swift */,
 				6654E9451D343AF90079ACF7 /* UITableView+Extensions.swift */,
 				CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */,
@@ -690,7 +693,7 @@
 				66F84D2F1D1880F900B54B01 /* EZSwiftFunctions.swift in Sources */,
 				66808E851D46B27D00ACCEAF /* Int+NSTimeInterval.swift in Sources */,
 				CEF814E51D1D0D2500A5622B /* GMSMapView+Extensions.swift in Sources */,
-				CEF814DD1D1D0B6300A5622B /* UISearchBarExtensions.swift in Sources */,
+				CEF814DD1D1D0B6300A5622B /* UISearchBar+TextField.swift in Sources */,
 				CEF814F51D1D2C2D00A5622B /* BlockTap.swift in Sources */,
 				66F84CD11D1880AF00B54B01 /* AppDelegate.swift in Sources */,
 				66F84D251D1880F900B54B01 /* DesignableLabel.swift in Sources */,
@@ -752,6 +755,7 @@
 				CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */,
 				66F84D381D1880F900B54B01 /* BlockLongPress.swift in Sources */,
 				66F84D411D1880F900B54B01 /* ErrorTypeExtensions.swift in Sources */,
+				CEA4494E1D4735D700097E6C /* UISwitch+Extensions.swift in Sources */,
 				66808E8C1D46B4D800ACCEAF /* UINavigationBar+Extension.swift in Sources */,
 				66812BD31D46C9DA00E3FD99 /* Binary.swift in Sources */,
 			);
