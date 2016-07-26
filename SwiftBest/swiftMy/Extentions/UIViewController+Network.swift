@@ -21,4 +21,12 @@ extension UIViewController {
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         })
     }
+    
+    func blockScreen() {
+        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+    }
+    
+    func unblockScreen() {
+        UIApplication.sharedApplication().endIgnoringInteractionEvents()
+    }
 }
