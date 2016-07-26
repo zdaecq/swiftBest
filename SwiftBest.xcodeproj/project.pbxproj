@@ -118,6 +118,7 @@
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
 		CEA4494E1D4735D700097E6C /* UISwitch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */; };
+		CEA4495B1D47406900097E6C /* UITabBarItem+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */; };
 		CEABED121D22BC8000455C05 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABED111D22BC8000455C05 /* LockView.swift */; };
 		CEE3DD741D24062F007B3812 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3DD731D24062F007B3812 /* BlurView.swift */; };
 		CEEFF1181D37A6510042D70E /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */; };
@@ -253,6 +254,7 @@
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumberKit+Extensions.swift"; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extensions.swift"; sourceTree = "<group>"; };
+		CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Init.swift"; sourceTree = "<group>"; };
 		CEABED111D22BC8000455C05 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		CEE3DD731D24062F007B3812 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ../ExtentionsOthers/BlurView.swift; sourceTree = "<group>"; };
 		CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 				66808E8B1D46B4D800ACCEAF /* UINavigationBar+Extension.swift */,
 				66808E8D1D46B5F700ACCEAF /* UIScrollView+Extension.swift */,
 				66808E941D46B8A900ACCEAF /* UITabBarController+Extension.swift */,
+				CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */,
 				66808E931D46B87600ACCEAF /* UITextField */,
 				6637E8961D454F8A00BBFB24 /* UIImage */,
 				CE6E3CE51D42065600FA4C83 /* UIViewController */,
@@ -716,6 +719,7 @@
 				6637E8761D45396000BBFB24 /* UIViewController+Segue.swift in Sources */,
 				66808E871D46B38700ACCEAF /* Int+Is.swift in Sources */,
 				CEEFF12E1D38F6F00042D70E /* UICollectionView+Extensions.swift in Sources */,
+				CEA4495B1D47406900097E6C /* UITabBarItem+Init.swift in Sources */,
 				66F84D4A1D1880F900B54B01 /* UIApplicationExtensions.swift in Sources */,
 				66F84D551D1880F900B54B01 /* UITextViewExtensions.swift in Sources */,
 				6637E8981D45507E00BBFB24 /* RandomNumber.swift in Sources */,

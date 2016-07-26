@@ -13,3 +13,13 @@ extension UIViewController {
         view.addBlurToBackgroundWithStyle(blurEffectStyle)
     }
 }
+
+//for programm tabBar
+extension UIViewController {
+    static func initialFromStoryboard(name: String, item: UITabBarItem?, bundle: NSBundle? = nil) -> UIViewController {
+        let storyboard = UIStoryboard(name: name, bundle: bundle)
+        let controller = storyboard.instantiateInitialViewController()!
+        controller.tabBarItem = item
+        return controller
+    }
+}
