@@ -8,8 +8,6 @@
 
 import Foundation
 
-// TODO: Get one from PhoneNumberKit
-
 // TODO: "if let" or "guard let"
 extension NSLocale {
 
@@ -61,4 +59,21 @@ extension NSLocale {
     var decimalSeparator: String {
         return objectForKey(NSLocaleDecimalSeparator) as! String
     }
+}
+
+import CoreTelephony
+public func defaultRegionCode() -> String {
+    //1
+    if let carrier = CTTelephonyNetworkInfo().subscriberCellularProvider {
+        if let isoCountryCode = carrier.isoCountryCode {
+            return isoCountryCode.uppercaseString
+        }
+    }
+    
+    //2
+    if let countryCode = NSLocale.currentLocale().objectForKey(NSLocaleCountryCode) as? String {
+        return countryCode
+    }
+    //3
+    return "en"
 }
