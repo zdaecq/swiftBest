@@ -12,6 +12,13 @@ import UIKit
 #endif
 
 extension String {
+    
+    var isURL: Bool {
+        let urlRegEx = "((https|http)://)((\\w|-)+)(([.]|[/])((\\w|-)+))+"
+        let predicate = NSPredicate(format:"SELF MATCHES %@", argumentArray:[urlRegEx])
+        return predicate.evaluateWithObject(self)
+    }
+    
     /// EZSE: Init string with a base64 encoded string
     init ? (base64: String) {
         let pad = String(count: base64.length % 4,repeatedValue: Character("="))
@@ -209,6 +216,22 @@ extension String {
         } else {
             return nil
         }
+    }
+    
+    public var integerValue: Int {
+        return (self as NSString).integerValue
+    }
+    
+    public var floatValue: Float {
+        return (self as NSString).floatValue
+    }
+
+    public var boolValue: Bool {
+        return (self as NSString).boolValue
+    }
+    
+    public func toData() -> NSData? {
+        return self.dataUsingEncoding(NSUTF8StringEncoding)
     }
 
     /// EZSE: Converts String to Double

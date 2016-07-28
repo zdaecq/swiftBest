@@ -27,6 +27,7 @@
 		6637E8951D454F6B00BBFB24 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637E8941D454F6B00BBFB24 /* UIImage+Color.swift */; };
 		6637E8981D45507E00BBFB24 /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637E8971D45507E00BBFB24 /* RandomNumber.swift */; };
 		6637E89A1D455BFD00BBFB24 /* UIViewController+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637E8991D455BFD00BBFB24 /* UIViewController+Extentions.swift */; };
+		663C36F21D4AA1B20084B0DD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C36F11D4AA1B20084B0DD /* Reachability.swift */; };
 		6654E9461D343AF90079ACF7 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654E9451D343AF90079ACF7 /* UITableView+Extensions.swift */; };
 		6654E9481D343B7E0079ACF7 /* UIStoryboardExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */; };
 		66808E7D1D457BC900ACCEAF /* NSNotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66808E7C1D457BC900ACCEAF /* NSNotificationCenter+Extension.swift */; };
@@ -166,6 +167,7 @@
 		6637E8941D454F6B00BBFB24 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		6637E8971D45507E00BBFB24 /* RandomNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		6637E8991D455BFD00BBFB24 /* UIViewController+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extentions.swift"; sourceTree = "<group>"; };
+		663C36F11D4AA1B20084B0DD /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		6654E9451D343AF90079ACF7 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		6654E9471D343B7E0079ACF7 /* UIStoryboardExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtentions.swift; sourceTree = "<group>"; };
 		66808E7C1D457BC900ACCEAF /* NSNotificationCenter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Extension.swift"; path = "../Extentions/NSNotificationCenter+Extension.swift"; sourceTree = "<group>"; };
@@ -565,6 +567,7 @@
 				66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */,
 				CEE3DD731D24062F007B3812 /* BlurView.swift */,
 				66F84CFC1D1880F900B54B01 /* BlockButton.swift */,
+				663C36F11D4AA1B20084B0DD /* Reachability.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				661F70DF1D3175970030B615 /* TableViewController.swift in Sources */,
 				66F84D421D1880F900B54B01 /* Int+Extensions.swift in Sources */,
 				66AA1C3F1D456F5400B0B204 /* CGSize+Aspect.swift in Sources */,
+				663C36F21D4AA1B20084B0DD /* Reachability.swift in Sources */,
 				66808E951D46B8A900ACCEAF /* UITabBarController+Extension.swift in Sources */,
 				CEA449611D475B5000097E6C /* TableView.swift in Sources */,
 				CEF814E41D1D0D2500A5622B /* Alamofire+Extensions.swift in Sources */,
