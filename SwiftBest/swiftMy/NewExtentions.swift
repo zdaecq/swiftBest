@@ -36,6 +36,7 @@ func setNavigationBarTranslucentTotal() {
     UINavigationBar.appearance().translucent = true
 }
 
+//1.
 //guard let userInfo = notification.userInfo else { return }
 //let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber
 //let curve = userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber
@@ -44,6 +45,24 @@ func setNavigationBarTranslucentTotal() {
 //UIView.animateWithDuration(NSTimeInterval(duration.doubleValue), delay: 0, options: options, animations: {
 //    UIApplication.sharedApplication().keyWindow?.layoutIfNeeded()
 //}, completion: nil)
+
+
+//2.
+//let picker = UIImagePickerController()
+//
+//firstly { () -> Promise<UIImage> in
+//    self.promiseViewController(picker)
+//    }.then { (image) -> UIImage in
+//        return OCImage.resizeImage(image, newWidth: 512)
+//    }.then { (image) in
+//        OCAccountService.uploadAvatar(image)
+//    }.then { () -> Void in
+//        OCAccountService.currentUser!.avatarCache.clearMemoryCache()
+//        OCAccountService.currentUser!.avatarCache.clearDiskCache()
+//        self.photoImageView.kf_setImageWithURL(NSURL(string: Constants.URLs.userAvatarPath)!,
+//            placeholderImage: nil,
+//            optionsInfo: [.TargetCache(OCAccountService.currentUser!.avatarCache), .Transition(ImageTransition.Fade(1))])
+//}
 
 
 extension UIApplication {
