@@ -16,6 +16,11 @@ extension UIViewController {
         var barStyle : UIBarStyle?
     }
     
+    
+    func showPhotoLibrary() {
+        showPhotoLibrary(animated: true, settings: nil)
+    }
+    
     func showPhotoLibrary(animated animated: Bool, settings: ImagePickerSettings?) {
         
         guard let controller = self as? protocol<UIImagePickerControllerDelegate, UINavigationControllerDelegate> else {
@@ -26,6 +31,7 @@ extension UIViewController {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .PhotoLibrary
         imagePickerController.delegate = controller;
+        imagePickerController.modalPresentationStyle = .OverFullScreen
         
         if let settings = settings {
             if let barTintColor = settings.barTintColor {
@@ -39,10 +45,6 @@ extension UIViewController {
             }
         }
         presentViewController(imagePickerController, animated: animated, completion: nil)
-    }
-    
-    func showPhotoLibrary() {
-        showPhotoLibrary(animated: true, settings: nil)
     }
 }
 
