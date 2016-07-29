@@ -119,6 +119,7 @@
 		CE0F9A741D269E4E007D2F64 /* NSLocale+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A731D269E4E007D2F64 /* NSLocale+Language.swift */; };
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */; };
 		CE4D68C51D4B4FF8001AA8E5 /* BaseKeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */; };
+		CE4D68CB1D4B8AB9001AA8E5 /* NSDate+string.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
 		CEA4494E1D4735D700097E6C /* UISwitch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */; };
 		CEA4495B1D47406900097E6C /* UITabBarItem+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */; };
@@ -263,6 +264,7 @@
 		CE0F9A731D269E4E007D2F64 /* NSLocale+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+Language.swift"; sourceTree = "<group>"; };
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumberKit+Extensions.swift"; sourceTree = "<group>"; };
 		CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseKeyboardController.swift; sourceTree = "<group>"; };
+		CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+string.swift"; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extensions.swift"; sourceTree = "<group>"; };
 		CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Init.swift"; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 				66F84D1B1D1880F900B54B01 /* UIUserInterfaceSizeClassExtensions.swift */,
 				66F84D1E1D1880F900B54B01 /* UIWindowExtensions.swift */,
 				CEA4495C1D475B5000097E6C /* NSDate+dayBegining.swift */,
+				CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */,
 				CEA4495D1D475B5000097E6C /* NSDate+localizedString.swift */,
 				CEA449621D475B6E00097E6C /* UIViewController+UIActivityIndicator.swift */,
 				CEA4495E1D475B5000097E6C /* TableView.swift */,
@@ -794,6 +797,7 @@
 				CEA4494E1D4735D700097E6C /* UISwitch+Extensions.swift in Sources */,
 				66808E8C1D46B4D800ACCEAF /* UINavigationBar+Extension.swift in Sources */,
 				66812BD31D46C9DA00E3FD99 /* Binary.swift in Sources */,
+				CE4D68CB1D4B8AB9001AA8E5 /* NSDate+string.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
