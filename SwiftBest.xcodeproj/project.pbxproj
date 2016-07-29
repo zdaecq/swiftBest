@@ -118,6 +118,7 @@
 		66FB8A0E1D3822C100937D6B /* DPTransparentEdgesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */; };
 		CE0F9A741D269E4E007D2F64 /* NSLocale+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A731D269E4E007D2F64 /* NSLocale+Language.swift */; };
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */; };
+		CE4D68C51D4B4FF8001AA8E5 /* BaseKeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
 		CEA4494E1D4735D700097E6C /* UISwitch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */; };
 		CEA4495B1D47406900097E6C /* UITabBarItem+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */; };
@@ -261,6 +262,7 @@
 		66FB8A0D1D3822C100937D6B /* DPTransparentEdgesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTransparentEdgesTableView.swift; sourceTree = "<group>"; };
 		CE0F9A731D269E4E007D2F64 /* NSLocale+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+Language.swift"; sourceTree = "<group>"; };
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumberKit+Extensions.swift"; sourceTree = "<group>"; };
+		CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseKeyboardController.swift; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		CEA4494D1D4735D700097E6C /* UISwitch+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extensions.swift"; sourceTree = "<group>"; };
 		CEA4495A1D47406900097E6C /* UITabBarItem+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Init.swift"; sourceTree = "<group>"; };
@@ -571,6 +573,7 @@
 				66F84CFC1D1880F900B54B01 /* BlockButton.swift */,
 				663C36F11D4AA1B20084B0DD /* Reachability.swift */,
 				663C36F31D4AA5F50084B0DD /* ResizableCollectionView.swift */,
+				CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				66F84D421D1880F900B54B01 /* Int+Extensions.swift in Sources */,
 				66AA1C3F1D456F5400B0B204 /* CGSize+Aspect.swift in Sources */,
 				663C36F21D4AA1B20084B0DD /* Reachability.swift in Sources */,
+				CE4D68C51D4B4FF8001AA8E5 /* BaseKeyboardController.swift in Sources */,
 				66808E951D46B8A900ACCEAF /* UITabBarController+Extension.swift in Sources */,
 				CEA449611D475B5000097E6C /* TableView.swift in Sources */,
 				CEF814E41D1D0D2500A5622B /* Alamofire+Extensions.swift in Sources */,

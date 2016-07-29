@@ -26,7 +26,7 @@ extension UIViewController {
     
     // MARK: - Keyboard Notifications (iOS only)
     #if os(iOS)
-    
+    /*
     public func addKeyboardWillShowNotification() {
         self.addNotificationObserver(UIKeyboardWillShowNotification, selector: #selector(UIViewController.keyboardWillShowNotification(_:)))
     }
@@ -106,7 +106,7 @@ extension UIViewController {
     public func keyboardDidHideWithFrame(frame: CGRect) {
         
     }
-    
+    */
 #endif
     
 }

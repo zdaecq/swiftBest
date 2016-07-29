@@ -23,6 +23,19 @@ extension UIAlertController {
     func show() {
         UIApplication.topController.presentViewController(self, animated: true, completion: nil)
     }
+    
+    func showWithoutHidingKeayboard() {
+        var controller = UIApplication.sharedApplication().windows.last!.rootViewController!
+        // ---v--- same as topController in extension UIApplication
+        while let presentedViewController = controller.presentedViewController {
+            controller = presentedViewController
+        }
+        controller.presentViewController(self, animated: true, completion: nil)
+    }
+    
+    func showInVC(controller: UIViewController) {
+        controller.presentViewController(self, animated: true, completion: nil)
+    }
 }
 
 extension UIApplication {

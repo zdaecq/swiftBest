@@ -36,5 +36,29 @@ func setNavigationBarTranslucentTotal() {
     UINavigationBar.appearance().translucent = true
 }
 
+//guard let userInfo = notification.userInfo else { return }
+//let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber
+//let curve = userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber
+//let options = UIViewAnimationOptions(rawValue: curve.unsignedLongValue)
+//
+//UIView.animateWithDuration(NSTimeInterval(duration.doubleValue), delay: 0, options: options, animations: {
+//    UIApplication.sharedApplication().keyWindow?.layoutIfNeeded()
+//}, completion: nil)
 
 
+extension UIApplication {
+    class func topViewController(base: UIViewController? = UIApplication.sharedApplication().keyWindow?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(selected)
+            }
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(presented)
+        }
+        return base
+    }
+}
