@@ -9,18 +9,18 @@
 import UIKit
 
 extension UITableViewCell {
-    
-    func removeMargins() {
+
+    //also you need remove separator insets in tableView in IB or use func removeSeparatorInsetsForEmptyCells
+    func removeSeparatorInsets() {
         if self.respondsToSelector(Selector("setSeparatorInset:")) {
             self.separatorInset = UIEdgeInsetsZero
         }
-        
-        if self.respondsToSelector(Selector("setPreservesSuperviewLayoutMargins:")) {
-            self.preservesSuperviewLayoutMargins = false
-        }
-        
         if self.respondsToSelector(Selector("setLayoutMargins:")) {
             self.layoutMargins = UIEdgeInsetsZero
         }
+        //maybe will be need
+        //if self.respondsToSelector(Selector("setPreservesSuperviewLayoutMargins:")) {
+            //self.preservesSuperviewLayoutMargins = false
+        //}
     }
 }

@@ -10,11 +10,12 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    //override func viewDidLoad() {
+        //super.viewDidLoad()
+    //}
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //(tableView as! DPTransparentEdgesTableView).colo
-        //refreshGradient()
+    @IBAction func actionTopButton(sender: UIButton) {
+        UIAlertController(title: "Hi", message: "Test").show()
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

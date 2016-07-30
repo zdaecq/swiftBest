@@ -27,7 +27,7 @@ extension UITableView {
 
 
 extension UITableView {
-
+    // use dequeueReusableCellWithIdentifier forIndexPath bcz dequeueReusableCellWithIdentifier can return nil
     func dequeueReusableCell <T: UITableViewCell>(identifier: T.Type) -> T {
         let identifierString = String(identifier)
         return self.dequeueReusableCellWithIdentifier(identifierString) as! T
@@ -49,6 +49,10 @@ extension UITableView {
 
     func removeEmptyCells() {
         tableFooterView = UIView()
+    }
+
+    func removeSeparatorInsetsForEmptyCells() {
+        separatorInset = UIEdgeInsetsZero
     }
 
     func scrollToBottomAnimated(animated: Bool) {
