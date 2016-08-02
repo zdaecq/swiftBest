@@ -21,5 +21,4 @@ extension UIScreen {
     class var height: CGFloat {
         return size.height
     }
-
 }
