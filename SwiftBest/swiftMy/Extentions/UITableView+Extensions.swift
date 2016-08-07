@@ -8,8 +8,6 @@
 
 import UIKit
 
-// TODO: registerClass
-
 extension UITableView {
 
     func registerNibCell <T: UITableViewCell>(identifier: T.Type) {
@@ -22,6 +20,12 @@ extension UITableView {
         let identifierString = String(identifier)
         let nib = UINib(nibName: identifierString, bundle: nil)
         registerNib(nib, forHeaderFooterViewReuseIdentifier: identifierString)
+    }
+
+    // TODO: Need to test
+    func registerClass <T: UITableViewCell>(identifier: T.Type) {
+        let identifierString = String(identifier)
+        registerClass(T.self, forCellReuseIdentifier: identifierString)
     }
 }
 

@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         clearBackBarButtonTitle()
         print(Reachability.isConnectedToNetwork())
 
-
         
     }
     
