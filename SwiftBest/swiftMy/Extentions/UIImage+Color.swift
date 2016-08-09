@@ -8,6 +8,8 @@
 
 import UIKit
 
+// TODO: test or refactor
+
 extension UIImage {
     
     /// EZSE: Use current image for pattern of color

@@ -35,7 +35,7 @@ extension UIImageView {
     }
 
     /// EZSwiftExtensions
-    public func roundSquareImage() {
+    public func roundImage() {
         self.clipsToBounds = true
         self.layer.cornerRadius = self.frame.size.width / 2
     }

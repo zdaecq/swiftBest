@@ -21,8 +21,7 @@ extension UILabel {
         font = UIFont.HelveticaNeue(type: FontType.None, size: fontSize)
         backgroundColor = UIColor.clearColor()
         clipsToBounds = true
-        textAlignment = NSTextAlignment.Left
-        userInteractionEnabled = true
+        textAlignment = .Left
         numberOfLines = 1
     }
 }
