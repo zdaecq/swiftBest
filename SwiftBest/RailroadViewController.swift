@@ -8,6 +8,10 @@
 
 import UIKit
 
+class View: UIView {
+    
+}
+
 class RailroadViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,8 +22,6 @@ class RailroadViewController: UIViewController {
         blurView.addFibrantText("Hello", fontSize: 80)
         view.addSubview(blurView)
         view.sendSubviewToBack(blurView)
-
-
 
 
         //let i : Int? = nil

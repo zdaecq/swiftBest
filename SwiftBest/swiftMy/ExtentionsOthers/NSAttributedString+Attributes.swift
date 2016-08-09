@@ -5,13 +5,13 @@
 //  Created by Lucas Farah on 18/02/16.
 //  Copyright (c) 2016 Lucas Farah. All rights reserved.
 //
+
 import UIKit
 
 extension NSAttributedString {
-    /// EZSE: Adds bold attribute to NSAttributedString and returns it
     
     #if os(iOS)
-    
+    /// EZSE: Adds bold attribute to NSAttributedString and returns it
     public func bold() -> NSAttributedString {
         guard let copy = self.mutableCopy() as? NSMutableAttributedString else { return self }
 

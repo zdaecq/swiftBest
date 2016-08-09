@@ -29,4 +29,15 @@ extension UIView {
         return UINib(nibName: nibName, bundle: bundle)
             .instantiateWithOwner(nil, options: nil)[0] as? UIView
     }
+    
+    // TODO: Test with NSBundel init nib2
+    class func nibName <T: UIView>(nibName: T.Type, bundle : NSBundle? = nil) -> T {
+        let nameString = String(T)
+        return UINib(nibName: nameString, bundle: bundle)
+            .instantiateWithOwner(nil, options: nil)[0] as! T
+    }
+    
+    class func fromNib<T : UIView>() -> T {
+        return NSBundle.mainBundle().loadNibNamed(String(T), owner: nil, options: nil)[0] as! T
+    }
 }
