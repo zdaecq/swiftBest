@@ -8,6 +8,8 @@
 
 import UIKit
 
+// TODO: create check for all types and get data for them
+
 extension UIImage {
     
     /// EZSE: Returns compressed image to rate from 0 to 1
