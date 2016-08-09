@@ -6,7 +6,7 @@
 //  Copyright © 2016 SMediaLink. All rights reserved.
 //
 
-// MARK: Need to import GoogleMaps framwork to project
+// MARK: Need to import GoogleMaps framework to project
 
 //import GoogleMaps
 //

@@ -130,6 +130,7 @@
 		CE4D68CB1D4B8AB9001AA8E5 /* NSDate+string.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */; };
 		CE4F170B1D59F8C00007F1AB /* UINavigationController+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */; };
 		CE4F170D1D59FB0B0007F1AB /* UIView+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */; };
+		CE4F17111D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17101D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
 		CEA0DAA21D50E0E2008BF767 /* Double+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0DAA11D50E0E2008BF767 /* Double+Number.swift */; };
 		CEA4494E1D4735D700097E6C /* UISwitch+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Properties.swift */; };
@@ -284,6 +285,7 @@
 		CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+string.swift"; path = "SwiftBest/swiftMy/ExtentionsOthers/NSDate+string.swift"; sourceTree = SOURCE_ROOT; };
 		CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Color.swift"; sourceTree = "<group>"; };
 		CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Resize.swift"; sourceTree = "<group>"; };
+		CE4F17101D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QBImagePickerController+NavVC.swift"; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		CEA0DAA11D50E0E2008BF767 /* Double+Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Double+Number.swift"; path = "SwiftBest/swiftMy/ExtentionsOthers/Double+Number.swift"; sourceTree = SOURCE_ROOT; };
 		CEA4494D1D4735D700097E6C /* UISwitch+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Properties.swift"; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 		66E55ACD1D514432007C9177 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F17101D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift */,
 				CEF815081D1D79B500A5622B /* Promise+Extensions.swift */,
 				CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */,
 				CEF814E21D1D0D2500A5622B /* Alamofire+Extensions.swift */,
@@ -826,6 +829,7 @@
 				66812BD11D46C59600E3FD99 /* Collections.swift in Sources */,
 				CEA4495F1D475B5000097E6C /* NSDate+dayBegining.swift in Sources */,
 				6637E8781D4539D900BBFB24 /* UIViewController+Network.swift in Sources */,
+				CE4F17111D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift in Sources */,
 				CEF814E81D1D0E3600A5622B /* KeyboardLayoutConstraint.swift in Sources */,
 				66F84D391D1880F900B54B01 /* BlockPan.swift in Sources */,
 				66F84D591D1880F900B54B01 /* UIWindow+Init.swift in Sources */,

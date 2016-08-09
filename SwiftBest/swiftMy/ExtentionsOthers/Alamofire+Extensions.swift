@@ -6,7 +6,7 @@
 //  Copyright © 2016 SMediaLink. All rights reserved.
 //
 
-// MARK: Need to import Alamofire framwork to project
+// MARK: Need to import Alamofire framework to project
 
 //import Alamofire
 //
