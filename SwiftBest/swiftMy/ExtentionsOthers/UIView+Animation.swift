@@ -8,14 +8,13 @@
 
 import UIKit
 
-
 private let UIViewAnimationDuration: NSTimeInterval = 1
 private let UIViewAnimationSpringDamping: CGFloat = 0.5
 private let UIViewAnimationSpringVelocity: CGFloat = 0.5
 
 
-// MARK: Animation Extensions
 extension UIView {
+    
     /// EZSwiftExtensions
     public func spring(animations animations: (() -> Void), completion: ((Bool) -> Void)? = nil) {
         spring(duration: UIViewAnimationDuration, animations: animations, completion: completion)

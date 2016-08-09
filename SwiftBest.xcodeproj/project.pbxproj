@@ -128,6 +128,8 @@
 		CE0F9A761D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */; };
 		CE4D68C51D4B4FF8001AA8E5 /* BaseKeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */; };
 		CE4D68CB1D4B8AB9001AA8E5 /* NSDate+string.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */; };
+		CE4F170B1D59F8C00007F1AB /* UINavigationController+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */; };
+		CE4F170D1D59FB0B0007F1AB /* UIView+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
 		CEA0DAA21D50E0E2008BF767 /* Double+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0DAA11D50E0E2008BF767 /* Double+Number.swift */; };
 		CEA4494E1D4735D700097E6C /* UISwitch+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Properties.swift */; };
@@ -280,6 +282,8 @@
 		CE0F9A751D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PhoneNumberKit+Extensions.swift"; path = "SwiftBest/swiftMy/ExtentionsOthers/PhoneNumberKit+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseKeyboardController.swift; sourceTree = "<group>"; };
 		CE4D68CA1D4B8AB9001AA8E5 /* NSDate+string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+string.swift"; path = "SwiftBest/swiftMy/ExtentionsOthers/NSDate+string.swift"; sourceTree = SOURCE_ROOT; };
+		CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Color.swift"; sourceTree = "<group>"; };
+		CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Resize.swift"; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		CEA0DAA11D50E0E2008BF767 /* Double+Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Double+Number.swift"; path = "SwiftBest/swiftMy/ExtentionsOthers/Double+Number.swift"; sourceTree = SOURCE_ROOT; };
 		CEA4494D1D4735D700097E6C /* UISwitch+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Properties.swift"; sourceTree = "<group>"; };
@@ -428,10 +432,13 @@
 		66E55ACB1D514424007C9177 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CEE3DD751D240636007B3812 /* UIViewExtensions */,
+				CE6E3CE51D42065600FA4C83 /* UIViewController */,
 				CEF814D61D1D0B6300A5622B /* UISearchBar+TextField.swift */,
 				CEEFF12D1D38F6F00042D70E /* UICollectionView+Extensions.swift */,
 				6654E9451D343AF90079ACF7 /* UITableView+Extensions.swift */,
 				CEEFF1171D37A6510042D70E /* UITableViewCell+Extensions.swift */,
+				CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */,
 				66E55AD71D577ADA007C9177 /* UIColor */,
 				66F84D151D1880F900B54B01 /* UIFont+Init.swift */,
 				662EAFA31D57832F00415EAE /* UIImageView */,
@@ -453,8 +460,6 @@
 				66E55AD41D514D71007C9177 /* UIDevice */,
 				66808E931D46B87600ACCEAF /* UITextField */,
 				6637E8961D454F8A00BBFB24 /* UIImage */,
-				CE6E3CE51D42065600FA4C83 /* UIViewController */,
-				CEE3DD751D240636007B3812 /* UIViewExtensions */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -651,6 +656,7 @@
 				66F84D1D1D1880F900B54B01 /* UIView+Extensions.swift */,
 				6637E88E1D4547B400BBFB24 /* UIView+Init.swift */,
 				6637E8811D45446E00BBFB24 /* UIView+Frame.swift */,
+				CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */,
 				6637E8831D45452600BBFB24 /* UIView+SubViews.swift */,
 				6637E8871D4545B200BBFB24 /* UIView+Layer.swift */,
 				6637E8851D45455100BBFB24 /* UIView+Transform.swift */,
@@ -788,6 +794,7 @@
 				66F84D431D1880F900B54B01 /* NSAttributedStringExtension.swift in Sources */,
 				6686F7E21D19F2AB00A447C8 /* RailroadViewController.swift in Sources */,
 				CEA449691D47A67500097E6C /* UIViewController+ImagePicker.swift in Sources */,
+				CE4F170D1D59FB0B0007F1AB /* UIView+Resize.swift in Sources */,
 				CEF815091D1D79B500A5622B /* Promise+Extensions.swift in Sources */,
 				6637E87C1D453CB900BBFB24 /* UIViewController+Notifications.swift in Sources */,
 				66812BCC1D46C21900E3FD99 /* NSLocale+Phone.swift in Sources */,
@@ -922,6 +929,7 @@
 				66F84D411D1880F900B54B01 /* ErrorTypeExtensions.swift in Sources */,
 				CEA4494E1D4735D700097E6C /* UISwitch+Properties.swift in Sources */,
 				66808E8C1D46B4D800ACCEAF /* UINavigationBar+Extension.swift in Sources */,
+				CE4F170B1D59F8C00007F1AB /* UINavigationController+Color.swift in Sources */,
 				66812BD31D46C9DA00E3FD99 /* Binary.swift in Sources */,
 				CE4D68CB1D4B8AB9001AA8E5 /* NSDate+string.swift in Sources */,
 			);
