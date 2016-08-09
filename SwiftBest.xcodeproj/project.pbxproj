@@ -131,6 +131,13 @@
 		CE4F170B1D59F8C00007F1AB /* UINavigationController+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */; };
 		CE4F170D1D59FB0B0007F1AB /* UIView+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */; };
 		CE4F17111D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17101D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift */; };
+		CE4F17131D5A063A0007F1AB /* SevenSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17121D5A063A0007F1AB /* SevenSwitch.swift */; };
+		CE4F171B1D5A06400007F1AB /* KCFABManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17151D5A06400007F1AB /* KCFABManager.swift */; };
+		CE4F171C1D5A06400007F1AB /* KCFABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17161D5A06400007F1AB /* KCFABViewController.swift */; };
+		CE4F171D1D5A06400007F1AB /* KCFABWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17171D5A06400007F1AB /* KCFABWindow.swift */; };
+		CE4F171E1D5A06400007F1AB /* KCFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17181D5A06400007F1AB /* KCFloatingActionButton.swift */; };
+		CE4F171F1D5A06400007F1AB /* KCFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F17191D5A06400007F1AB /* KCFloatingActionButtonDelegate.swift */; };
+		CE4F17201D5A06400007F1AB /* KCFloatingActionButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F171A1D5A06400007F1AB /* KCFloatingActionButtonItem.swift */; };
 		CE6E3CE41D42063D00FA4C83 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */; };
 		CEA0DAA21D50E0E2008BF767 /* Double+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0DAA11D50E0E2008BF767 /* Double+Number.swift */; };
 		CEA4494E1D4735D700097E6C /* UISwitch+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4494D1D4735D700097E6C /* UISwitch+Properties.swift */; };
@@ -286,6 +293,13 @@
 		CE4F170A1D59F8C00007F1AB /* UINavigationController+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Color.swift"; sourceTree = "<group>"; };
 		CE4F170C1D59FB0B0007F1AB /* UIView+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Resize.swift"; sourceTree = "<group>"; };
 		CE4F17101D5A00DF0007F1AB /* QBImagePickerController+NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QBImagePickerController+NavVC.swift"; sourceTree = "<group>"; };
+		CE4F17121D5A063A0007F1AB /* SevenSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SevenSwitch.swift; sourceTree = "<group>"; };
+		CE4F17151D5A06400007F1AB /* KCFABManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFABManager.swift; sourceTree = "<group>"; };
+		CE4F17161D5A06400007F1AB /* KCFABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFABViewController.swift; sourceTree = "<group>"; };
+		CE4F17171D5A06400007F1AB /* KCFABWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFABWindow.swift; sourceTree = "<group>"; };
+		CE4F17181D5A06400007F1AB /* KCFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFloatingActionButton.swift; sourceTree = "<group>"; };
+		CE4F17191D5A06400007F1AB /* KCFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		CE4F171A1D5A06400007F1AB /* KCFloatingActionButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFloatingActionButtonItem.swift; sourceTree = "<group>"; };
 		CE6E3CE31D42063D00FA4C83 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		CEA0DAA11D50E0E2008BF767 /* Double+Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Double+Number.swift"; path = "SwiftBest/swiftMy/ExtentionsOthers/Double+Number.swift"; sourceTree = SOURCE_ROOT; };
 		CEA4494D1D4735D700097E6C /* UISwitch+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Properties.swift"; sourceTree = "<group>"; };
@@ -635,6 +649,19 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		CE4F17141D5A06400007F1AB /* KCFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F17151D5A06400007F1AB /* KCFABManager.swift */,
+				CE4F17161D5A06400007F1AB /* KCFABViewController.swift */,
+				CE4F17171D5A06400007F1AB /* KCFABWindow.swift */,
+				CE4F17181D5A06400007F1AB /* KCFloatingActionButton.swift */,
+				CE4F17191D5A06400007F1AB /* KCFloatingActionButtonDelegate.swift */,
+				CE4F171A1D5A06400007F1AB /* KCFloatingActionButtonItem.swift */,
+			);
+			path = KCFloatingActionButton;
+			sourceTree = "<group>";
+		};
 		CE6E3CE51D42065600FA4C83 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -688,6 +715,8 @@
 				663C36F11D4AA1B20084B0DD /* Reachability.swift */,
 				663C36F31D4AA5F50084B0DD /* ResizableCollectionView.swift */,
 				CE4D68C41D4B4FF8001AA8E5 /* BaseKeyboardController.swift */,
+				CE4F17121D5A063A0007F1AB /* SevenSwitch.swift */,
+				CE4F17141D5A06400007F1AB /* KCFloatingActionButton */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -796,6 +825,7 @@
 				66F84D241D1880F900B54B01 /* DesignableImageView.swift in Sources */,
 				66F84D431D1880F900B54B01 /* NSAttributedStringExtension.swift in Sources */,
 				6686F7E21D19F2AB00A447C8 /* RailroadViewController.swift in Sources */,
+				CE4F171F1D5A06400007F1AB /* KCFloatingActionButtonDelegate.swift in Sources */,
 				CEA449691D47A67500097E6C /* UIViewController+ImagePicker.swift in Sources */,
 				CE4F170D1D59FB0B0007F1AB /* UIView+Resize.swift in Sources */,
 				CEF815091D1D79B500A5622B /* Promise+Extensions.swift in Sources */,
@@ -809,6 +839,7 @@
 				66F84D5A1D1880F900B54B01 /* Functions.swift in Sources */,
 				66F84D541D1880F900B54B01 /* UISwitch+Extensions.swift in Sources */,
 				CE0F9A761D269E6B007D2F64 /* PhoneNumberKit+Extensions.swift in Sources */,
+				CE4F171B1D5A06400007F1AB /* KCFABManager.swift in Sources */,
 				66F84D3A1D1880F900B54B01 /* BlockPinch.swift in Sources */,
 				661F70DF1D3175970030B615 /* TableViewController.swift in Sources */,
 				66F84D421D1880F900B54B01 /* Int+Extensions.swift in Sources */,
@@ -847,6 +878,7 @@
 				6637E8931D454DF500BBFB24 /* UIView+Blurable(9.0+).swift in Sources */,
 				6637E87E1D45428300BBFB24 /* UIViewController+Bar.swift in Sources */,
 				66F84D2E1D1880F900B54B01 /* DictionaryExtensions.swift in Sources */,
+				CE4F17131D5A063A0007F1AB /* SevenSwitch.swift in Sources */,
 				66808E901D46B70700ACCEAF /* UITextField+Range.swift in Sources */,
 				66F84D4C1D1880F900B54B01 /* UIButton+Extensions.swift in Sources */,
 				6686F7E61D1B2D9200A447C8 /* DesignableButton.swift in Sources */,
@@ -884,14 +916,17 @@
 				CEF814DB1D1D0B6300A5622B /* NSAttributedStringExtensions.swift in Sources */,
 				6637E8761D45396000BBFB24 /* UIViewController+Segue.swift in Sources */,
 				66808E871D46B38700ACCEAF /* Int+Is.swift in Sources */,
+				CE4F171E1D5A06400007F1AB /* KCFloatingActionButton.swift in Sources */,
 				CEEFF12E1D38F6F00042D70E /* UICollectionView+Extensions.swift in Sources */,
 				CEA4495B1D47406900097E6C /* UITabBarItem+Init.swift in Sources */,
+				CE4F17201D5A06400007F1AB /* KCFloatingActionButtonItem.swift in Sources */,
 				66F84D4A1D1880F900B54B01 /* UIApplication+Extensions.swift in Sources */,
 				66E55AD61D577A84007C9177 /* UIColor+Init.swift in Sources */,
 				66F84D551D1880F900B54B01 /* UITextView+Extensions.swift in Sources */,
 				66E55AD91D577B05007C9177 /* UIColor+Random.swift in Sources */,
 				6637E8981D45507E00BBFB24 /* RandomNumber.swift in Sources */,
 				6637E8821D45446E00BBFB24 /* UIView+Frame.swift in Sources */,
+				CE4F171C1D5A06400007F1AB /* KCFABViewController.swift in Sources */,
 				CEF814EC1D1D0F5B00A5622B /* IsoCountries.swift in Sources */,
 				66F84D2A1D1880F900B54B01 /* DesignableCheckbox.swift in Sources */,
 				66E55AD31D514CAF007C9177 /* UIDevice+Version.swift in Sources */,
@@ -910,6 +945,7 @@
 				66F84D521D1880F900B54B01 /* UILabel+Extensions.swift in Sources */,
 				66F84D371D1880F900B54B01 /* BlockButton.swift in Sources */,
 				66F84D401D1880F900B54B01 /* DoubleExtensions.swift in Sources */,
+				CE4F171D1D5A06400007F1AB /* KCFABWindow.swift in Sources */,
 				6654E9481D343B7E0079ACF7 /* UIStoryboard+Controller.swift in Sources */,
 				66F84D261D1880F900B54B01 /* DesignableTabBarController.swift in Sources */,
 				66F84D5C1D1880F900B54B01 /* LoadingView.swift in Sources */,
