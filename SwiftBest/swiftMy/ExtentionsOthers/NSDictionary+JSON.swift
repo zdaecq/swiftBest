@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSDictionary {
     /// EZSE: Unserialize JSON string into NSDictionary
-    public convenience init ? (json: String) {
+    public convenience init? (json: String) {
         if let data = (try? NSJSONSerialization.JSONObjectWithData(json.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!, options: NSJSONReadingOptions.MutableContainers)) as? NSDictionary {
             self.init(dictionary: data)
         } else {
@@ -20,7 +20,7 @@ public extension NSDictionary {
     }
     
     /// EZSE: Serialize NSDictionary into JSON string
-    public func formatJSON() -> String? {
+    public func toJSON() -> String? {
         if let jsonData = try? NSJSONSerialization.dataWithJSONObject(self, options: NSJSONWritingOptions()) {
             let jsonStr = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
             return String(jsonStr ?? "")

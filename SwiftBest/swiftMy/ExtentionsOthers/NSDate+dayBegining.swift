@@ -10,6 +10,7 @@ import UIKit
 
 extension NSDate {
     
+    // TODO: undestand
     func beginningOfDay() -> NSDate {
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components([.Year, .Month, .Day], fromDate: self)
