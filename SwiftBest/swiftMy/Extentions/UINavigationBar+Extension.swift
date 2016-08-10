@@ -15,18 +15,4 @@ extension UINavigationBar {
         shadowImage = UIImage()
         translucent = true
     }
-    
-    func setTitleFont(font: UIFont) {
-        setTitleFont(font, withColor: UIColor.blackColor())
-    }
-    
-    func setTitleFont(font: UIFont, withColor color: UIColor) {
-        var attrs = [String: AnyObject]()
-        attrs[NSFontAttributeName] = font
-        attrs[NSForegroundColorAttributeName] = color
-        
-        titleTextAttributes = attrs
-    }
-    
 }
-
