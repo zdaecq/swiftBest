@@ -20,5 +20,17 @@ extension UIScrollView {
         
         contentSize = rect.size
     }
+}
+
+extension UIScrollView {
     
+    func scrollToTop() {
+        setContentOffset(CGPointZero, animated: true)
+    }
+    
+    // TODO: need to check
+    func scrollToBottom() {
+        let bottomOffset = CGPointMake(0, contentSize.height - bounds.size.height + contentOffset.y);
+        setContentOffset(bottomOffset, animated: true)
+    }
 }

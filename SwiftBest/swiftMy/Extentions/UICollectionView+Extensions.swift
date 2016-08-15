@@ -9,6 +9,17 @@
 import UIKit
 
 extension UICollectionView {
+    
+    func deselectAllItems() {
+        guard let selectedCellIndexs = indexPathsForSelectedItems() else { return }
+        
+        for index in selectedCellIndexs {
+            deselectItemAtIndexPath(index, animated: false)
+        }
+    }
+}
+
+extension UICollectionView {
 
     func dequeueReusableCell <T: UICollectionViewCell>(identifier: T.Type, forIndexPath indexPath: NSIndexPath) -> T {
         let identifierString = String(identifier)

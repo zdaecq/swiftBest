@@ -29,6 +29,7 @@ extension UINavigationBar {
         }
     }
     
+    // same as new font property
     func  setTextFont(font: UIFont) {
         titleTextAttributes = [NSFontAttributeName : font]
     }
