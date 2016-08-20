@@ -22,7 +22,7 @@ class RailroadViewController: UIViewController {
         blurView.addFibrantText("Hello", fontSize: 80)
         view.addSubview(blurView)
         view.sendSubviewToBack(blurView)
-
+        
 
         //let i : Int? = nil
         //let a = bind(i) { i in "\(i)" }

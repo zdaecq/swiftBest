@@ -8,35 +8,29 @@
 
 import UIKit
 
-// MARK: - VC Flow
 extension UIViewController {
     
     /// EZSwiftExtensions
-    public func pushVC(vc: UIViewController) {
+    public func push(vc: UIViewController) {
         navigationController?.pushViewController(vc, animated: true)
     }
     
     /// EZSwiftExtensions
-    public func popVC() {
+    public func pop() {
         navigationController?.popViewControllerAnimated(true)
     }
     
+    public func popToRoot() {
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
     /// EZSwiftExtensions
-    public func presentVC(vc: UIViewController) {
+    public func present(vc: UIViewController) {
         presentViewController(vc, animated: true, completion: nil)
     }
     
     /// EZSwiftExtensions
-    public func dismissVC(completion completion: (() -> Void)? ) {
+    public func dismiss(completion completion: (() -> Void)? ) {
         dismissViewControllerAnimated(true, completion: completion)
     }
-    
-    func dismiss() {
-        if let navController = navigationController {
-            navController.popViewControllerAnimated(true)
-        } else {
-            dismissViewControllerAnimated(true, completion: nil)
-        }
-    }
 }
-
