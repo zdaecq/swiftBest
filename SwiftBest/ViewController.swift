@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         setNavigationBarTranslucent()
         clearBackBarButtonTitle()
         print(Reachability.isConnectedToNetwork())
-
         
     }
     

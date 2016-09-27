@@ -70,4 +70,13 @@ extension UITableView {
     func scrollToIndexPath(indexPath: NSIndexPath, animated: Bool) {
         scrollToRowAtIndexPath(indexPath, atScrollPosition: .Bottom, animated: animated)
     }
+    
+    func setViewWhenEmpty(view: UIView) {
+        let numberRows = numberOfRowsInSection(0)
+        if numberRows == 0 {
+            backgroundView = view
+        } else {
+            backgroundView = nil
+        }
+    }
 }
