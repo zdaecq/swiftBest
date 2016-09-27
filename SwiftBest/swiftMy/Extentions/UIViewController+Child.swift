@@ -12,17 +12,12 @@ extension UIViewController {
 
     // container must be view of UIViewController
     func addChildVC(vc: UIViewController, toContainer container: UIView) {
-
-        // возможно не надо эту строчку, она вызывается в addChildViewController
-        vc.willMoveToParentViewController(self)
-
+        addChildViewController(vc)
+        
         vc.view.frame = container.bounds
         vc.view.layoutIfNeeded() //without animation
-
-        container.removeSubviews()
         container.addSubview(vc.view)
-
-        self.addChildViewController(vc)
+        
         vc.didMoveToParentViewController(self)
     }
 
@@ -38,5 +33,13 @@ extension UIViewController {
 
     func addChildVCWithNavItem(vc: UIViewController) {
         addChildWithNavItem(vc, toContainer: self.view)
+    }
+    
+    
+    //remove
+    func removeFromContainer() {
+        willMoveToParentViewController(nil)
+        view.removeFromSuperview()
+        removeFromParentViewController()
     }
 }
