@@ -15,20 +15,20 @@ public extension NSBundle {
     //  NSBundle.loadNib("ViewXibName", owner: self) //some UIView subclass
     //  self.addSubview(self.contentView)
     public class func loadNib(name: String, owner: AnyObject!) {
-        NSBundle.mainBundle().loadNibNamed(name, owner: owner, options: nil)[0]
+        NSBundle.mainBundle().loadNibNamed(name, owner: owner, options: nil)![0]
     }
 
     /// EZSE: load xib
     /// Usage: let view: ViewXibName = NSBundle.loadNib("ViewXibName")
     public class func loadNib<T>(name: String) -> T? {
-        return NSBundle.mainBundle().loadNibNamed(name, owner: nil, options: nil)[0] as? T
+        return NSBundle.mainBundle().loadNibNamed(name, owner: nil, options: nil)![0] as? T
     }
     
     
     // TODO: Test with UIView init nib
     public class func loadNib2<T: UIView>(name: T.Type) -> T {
         let identifierName = String(name)
-        return NSBundle.mainBundle().loadNibNamed(identifierName, owner: nil, options: nil)[0] as! T
+        return NSBundle.mainBundle().loadNibNamed(identifierName, owner: nil, options: nil)![0] as! T
     }
 
 }

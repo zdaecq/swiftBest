@@ -45,7 +45,7 @@ extension Blurable {
             return
         }
 
-        blur.setValue(CIImage(image: image), forKey: kCIInputImageKey)
+        blur.setValue(CIImage(image: image!), forKey: kCIInputImageKey)
         blur.setValue(blurRadius, forKey: kCIInputRadiusKey)
 
         let ciContext  = CIContext(options: nil)
@@ -59,7 +59,7 @@ extension Blurable {
 
         let cgImage = ciContext.createCGImage(result, fromRect: boundingRect)
 
-        let filteredImage = UIImage(CGImage: cgImage)
+        let filteredImage = UIImage(CGImage: cgImage!)
 
         let blurOverlay = BlurOverlay()
         blurOverlay.frame = boundingRect

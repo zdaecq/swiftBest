@@ -49,7 +49,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        self.init(CGImage: image.CGImage!)
+        self.init(CGImage: image!.CGImage!)
         
     }
     
@@ -59,7 +59,7 @@ extension UIImage {
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        self.init(CGImage: newImage.CGImage!)
+        self.init(CGImage: newImage!.CGImage!)
     }
     
     ///EZSE: Returns an empty image
@@ -67,6 +67,6 @@ extension UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 1, height: 1), false, 0.0)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image!
     }
 }

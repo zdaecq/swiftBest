@@ -56,7 +56,7 @@ extension NSLocale {
 }
 
 extension NSLocale {
-    var decimalSeparator: String {
+    var decimalSeparatorHelper: String {
         return objectForKey(NSLocaleDecimalSeparator) as! String
     }
 }

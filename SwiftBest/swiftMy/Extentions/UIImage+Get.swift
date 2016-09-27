@@ -38,7 +38,7 @@ extension UIImage {
         let newSize = CGSize(width: w, height: h)
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
         image.drawInRect(CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
-        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return newImage
     }
@@ -52,7 +52,7 @@ extension UIImage {
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return img
+        return img!
     }
     
     /// EZSE Returns resized image with height. Might return low quality
@@ -64,7 +64,7 @@ extension UIImage {
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return img
+        return img!
     }
     
     /// EZSE: Returns cropped image from CGRect
@@ -78,7 +78,7 @@ extension UIImage {
             return nil
         }
         let scaledBounds: CGRect = CGRect(x: bound.x * self.scale, y: bound.y * self.scale, width: bound.w * self.scale, height: bound.h * self.scale)
-        let imageRef = CGImageCreateWithImageInRect(self.CGImage, scaledBounds)
+        let imageRef = CGImageCreateWithImageInRect(self.CGImage!, scaledBounds)
         let croppedImage: UIImage = UIImage(CGImage: imageRef!, scale: self.scale, orientation: UIImageOrientation.Up)
         return croppedImage
     }

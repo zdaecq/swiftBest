@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OBf-6C-bfK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OBf-6C-bfK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--title-->
@@ -14,26 +15,28 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="text here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjy-5B-4mb" customClass="DesignableTextField" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="69" y="65" width="183" height="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <frame key="frameInset" minX="69" minY="65" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-MM-OcS" customClass="DesignableButton" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="73" y="187" width="199" height="121"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <frame key="frameInset" minX="73" minY="187" width="199" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title=" dfg dfgfdg f fg" image="Search icon@1x">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -42,24 +45,25 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-jg-IBs" customClass="DesignableCheckbox" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="112" y="316" width="96" height="92"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <frame key="frameInset" minX="112" minY="316" width="96" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkSize">
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
-                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="checkedFillColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="uncheckedFillColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="5"/>
@@ -68,10 +72,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kif-yq-mNY" customClass="DesignableButton" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="69" y="112" width="192" height="67"/>
+                                <frame key="frameInset" minX="69" minY="112" width="192" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="18" maxY="0.0"/>
                                 <state key="normal" title="dsfdfgfg" image="Search icon@1x">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -87,7 +92,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAM-v3-tLx" customClass="BYButton" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="28" y="30" width="264" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="264" id="Swu-aD-RkX"/>
                                     <constraint firstAttribute="height" constant="44" id="X48-ki-7jT"/>
@@ -95,14 +99,13 @@
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZAM-v3-tLx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AMk-bB-OTO"/>
                             <constraint firstItem="ZAM-v3-tLx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Zbu-CP-VAB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="title" id="Yqi-sP-mwH"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="Bm7-7r-huE" kind="presentation" identifier="modal" modalPresentationStyle="overFullScreen" id="qt3-vT-mJ7"/>
                     </connections>
@@ -120,52 +123,51 @@
                         <viewControllerLayoutGuide type="bottom" id="m0b-Vr-bOV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hkX-Nf-21p">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfV-IR-9kk">
-                                <rect key="frame" x="96" y="113" width="129" height="88"/>
+                                <frame key="frameInset" minX="96" minY="113" width="129" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back"/>
                                 <connections>
                                     <segue destination="k4g-Dc-6e5" kind="unwind" unwindAction="unwindToViewController:" id="U1w-4i-V8M"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFb-Bd-922" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="k4g-Dc-6e5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1471" y="387"/>
+            <point key="canvasLocation" x="1886" y="387"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="T6l-jk-4Km">
             <objects>
                 <tableViewController id="pVZ-Km-yw7" customClass="TableViewController" customModule="SwiftBest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iCH-m0-Th4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <color key="sectionIndexColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="1" green="0.13490769320000001" blue="0.16530466160000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" red="0.093527267260000005" green="1" blue="0.014920364550000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.13490769320000001" blue="0.16530466160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.093527267260000005" green="1" blue="0.014920364550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="hpi-Fh-MvN">
-                            <rect key="frame" x="0.0" y="64" width="600" height="183"/>
+                            <rect key="frame" x="0.0" y="64" width="320" height="183"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOj-2E-dB0">
-                                    <rect key="frame" x="277" y="77" width="46" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.13490769320000001" blue="0.16530466160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.13490769320000001" blue="0.16530466160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="Button"/>
                                     <connections>
                                         <action selector="actionTopButton:" destination="pVZ-Km-yw7" eventType="touchUpInside" id="Dp3-2N-1KT"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="HOj-2E-dB0" firstAttribute="centerX" secondItem="hpi-Fh-MvN" secondAttribute="centerX" id="GXr-Sz-nd6"/>
                                 <constraint firstItem="HOj-2E-dB0" firstAttribute="top" secondItem="hpi-Fh-MvN" secondAttribute="top" constant="77" id="h90-rW-Biy"/>
@@ -173,16 +175,15 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="1d1-SH-0Ph" customClass="TableViewCell" customModule="SwiftBest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="275" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="275" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1d1-SH-0Ph" id="5F6-Hv-gvp">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <frame key="frameInset" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-04-Cl8">
-                                            <rect key="frame" x="279" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -209,15 +210,15 @@
             <objects>
                 <tableViewController id="Qhs-Jz-5GJ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ujZ-es-Ch7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wTE-ft-a79">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTE-ft-a79" id="DcX-9p-1yL">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <frame key="frameInset" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -230,7 +231,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npB-hE-rvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2787" y="1126"/>
+            <point key="canvasLocation" x="2863" y="1125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aEK-a6-dhL">

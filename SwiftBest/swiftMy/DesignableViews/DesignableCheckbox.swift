@@ -123,12 +123,12 @@ import UIKit
         let group = CGRectInset(frame, self.borderWidth/2, self.borderWidth/2)
         
         let ovalPath = UIBezierPath(ovalInRect: group)
-        CGContextSaveGState(context)
-        CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, shadowColor.CGColor)
+        CGContextSaveGState(context!)
+        CGContextSetShadowWithColor(context!, shadowOffset, shadowBlurRadius, shadowColor.CGColor)
         
         self.currentFillColor.setFill()
         ovalPath.fill()
-        CGContextRestoreGState(context)
+        CGContextRestoreGState(context!)
         
         self.borderColor.setStroke()
         ovalPath.lineWidth = self.borderWidth
@@ -156,9 +156,9 @@ import UIKit
             checkPath.lineWidth = self.checkmarkSize
             self.checkmarkColor.setStroke()
             
-            CGContextSetBlendMode(context, .Clear)
+            CGContextSetBlendMode(context!, .Clear)
             checkPath.stroke()
-            CGContextSetBlendMode(context, .Normal)
+            CGContextSetBlendMode(context!, .Normal)
             checkPath.stroke()
         }
     }
